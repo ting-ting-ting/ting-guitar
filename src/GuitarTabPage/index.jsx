@@ -2,10 +2,11 @@ import React from 'react';
 import {
   Link,
 } from "react-router-dom";
+import Measure from '../components/Measure';
 
 const GuitarTabPage = () => (
   <div>
-    <p>GuitarTabPage</p>
+    <Measure />
     <Link to="/">back</Link>
   </div>
 );
