@@ -6,8 +6,10 @@ import Measure from '../components/Measure';
 import Line from '../components/Line';
 import tabData from '../pu.json';
 
-const GuitarTabPage = (props) => {
-  console.log('tabData', tabData, props);
+const GuitarTabPage = ({
+  match,
+}) => {
+  console.log('tabData', tabData, match);
 
   return (
     <div>

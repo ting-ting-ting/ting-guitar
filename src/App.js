@@ -16,12 +16,8 @@ function App() {
       <Router>
         <div className="main-container">
           <Switch>
-            <Route path="/tab/:path">
-              <GuitarTabPage />
-            </Route>
-            <Route path="/">
-              <HomePage />
-            </Route>
+            <Route path="/tab/:id" component={GuitarTabPage} />
+            <Route path="/" component={HomePage} />
           </Switch>
         </div>
       </Router>
