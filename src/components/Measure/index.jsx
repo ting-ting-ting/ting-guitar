@@ -12,6 +12,12 @@ const Measure = ({
         <span className="chord">F</span>
         <span className="chord"></span>
       </div>
+      <div className="words-wrapper">
+        <span className="word">Oublie-le</span>
+        <span className="word"></span>
+        <span className="word"></span>
+        <span className="word"></span>
+      </div>
     </div>
   );
 };
