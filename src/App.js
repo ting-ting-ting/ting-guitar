@@ -1,9 +1,10 @@
+import Header from './Header';
 import './App.scss';
 
 function App() {
   return (
     <div className="App">
-      <p>吉他譜唷！</p>
+      <Header />
     </div>
   );
 }
