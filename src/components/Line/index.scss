@@ -1,14 +1,16 @@
 .line {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  .measures-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 
-  .measure {
-    flex: 1;
+    .measure {
+      flex: 1;
 
-    & + .measure {
-      .chords-wrapper {
-        border-left: none;
+      & + .measure {
+        .chords-wrapper {
+          border-left: none;
+        }
       }
     }
   }

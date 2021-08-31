@@ -2,21 +2,16 @@ import React from 'react';
 import './index.scss';
 
 const Measure = ({
-
+  measure,
 }) => {
+  console.log('measure', measure);
+
   return (
     <div className="measure">
       <div className="chords-wrapper">
-        <span className="chord">C</span>
-        <span className="chord"></span>
-        <span className="chord">F</span>
-        <span className="chord"></span>
-      </div>
-      <div className="words-wrapper">
-        <span className="word">Oublie-le</span>
-        <span className="word"></span>
-        <span className="word"></span>
-        <span className="word"></span>
+        {measure.map(chord => (
+          <span className="chord">C</span>
+        ))}
       </div>
     </div>
   );

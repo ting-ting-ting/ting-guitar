@@ -1,23 +1,12 @@
 .measure {
-  .chords-wrapper, .words-wrapper {
+  .chords-wrapper {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-  }
-
-  .chords-wrapper {
     border-left: 1px solid #000;
     border-right: 1px solid #000;
 
     .chord {
-      flex: 1;
-      color: #633919;
-    }
-  }
-
-  .words-wrapper {
-    margin-top: 10px;
-    .word {
       flex: 1;
       color: #633919;
     }

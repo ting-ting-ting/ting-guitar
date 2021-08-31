@@ -1,6 +1,16 @@
 import React from 'react';
 import Measure from '../../components/Measure';
 import Line from '../../components/Line';
+import {
+  NUMBER_ONE,
+  NUMBER_FOUR,
+  NUMBER_FIVE,
+  NUMBER_SIX,
+} from '../../constants/number';
+import {
+  TYPE_MAJOR,
+  TYPE_MINOR,
+} from '../../constants/type';
 
 const Angel = () => {
   return (
@@ -10,8 +20,8 @@ const Angel = () => {
           chords: [
             [
               {
-                number: '1',
-                type: 'maj',
+                number: NUMBER_ONE,
+                type: TYPE_MAJOR,
               },
               null,
               null,
@@ -19,8 +29,8 @@ const Angel = () => {
             ],
             [
               {
-                number: '6',
-                type: 'm',
+                number: NUMBER_SIX,
+                type: TYPE_MINOR,
               },
               null,
               null,
@@ -28,8 +38,8 @@ const Angel = () => {
             ],
             [
               {
-                number: '4',
-                type: 'maj',
+                number: NUMBER_FOUR,
+                type: TYPE_MAJOR,
               },
               null,
               null,
@@ -37,8 +47,8 @@ const Angel = () => {
             ],
             [
               {
-                number: '5',
-                type: 'maj',
+                number: NUMBER_FIVE,
+                type: TYPE_MAJOR,
               },
               null,
               null,
