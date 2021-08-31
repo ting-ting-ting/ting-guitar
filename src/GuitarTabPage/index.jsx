@@ -7,9 +7,15 @@ import Line from '../components/Line';
 import tabData from '../pu.json';
 
 const GuitarTabPage = ({
-  match,
+  match: {
+    params: {
+      id,
+    },
+  },
 }) => {
-  console.log('tabData', tabData, match);
+  const tab = tabData.data[id];
+
+  console.log('tab', tab);
 
   return (
     <div>
