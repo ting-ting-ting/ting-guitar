@@ -13,9 +13,6 @@ const HomePage = () => (
         <li>
           <Link to="/tab/2">tab2</Link>
         </li>
-        <li>
-          <Link to="/tab/3">tab3</Link>
-        </li>
       </ul>
     </nav>
   </div>

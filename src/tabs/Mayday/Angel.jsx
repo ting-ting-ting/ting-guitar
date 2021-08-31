@@ -4,9 +4,9 @@ import Line from '../../components/Line';
 
 const Angel = () => {
   return (
-    <div>
-      Angel
-    </div>
+    <>
+      <Line />
+    </>
   );
 };
 
