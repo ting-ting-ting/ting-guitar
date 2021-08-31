@@ -2,9 +2,7 @@ import React from 'react';
 import {
   Link,
 } from "react-router-dom";
-import Measure from '../components/Measure';
-import Line from '../components/Line';
-import tabData from '../pu.json';
+import { tabData } from '../constants/tabData';
 
 const GuitarTabPage = ({
   match: {
@@ -13,13 +11,11 @@ const GuitarTabPage = ({
     },
   },
 }) => {
-  const tab = tabData.data[id];
-
-  console.log('tab', tab);
+  const Comp = tabData[id].component;
 
   return (
     <div>
-      <Line />
+      <Comp />
       <Link to="/">back</Link>
     </div>
   );
