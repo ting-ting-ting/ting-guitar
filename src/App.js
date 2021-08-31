@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <Header />
       <Router>
-        <div>
+        <div className="main-container">
           <Switch>
             <Route path="/tab/:path">
               <GuitarTabPage />

@@ -5,8 +5,11 @@ const Measure = ({
 
 }) => {
   return (
-    <div>
-      Measure
+    <div className="measure">
+      <span className="chord">C</span>
+      <span className="chord">Dm7</span>
+      <span className="chord">F</span>
+      <span className="chord">G</span>
     </div>
   );
 };
