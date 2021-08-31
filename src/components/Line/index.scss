@@ -7,7 +7,9 @@
     flex: 1;
 
     & + .measure {
-      border-left: none;
+      .chords-wrapper {
+        border-left: none;
+      }
     }
   }
 }

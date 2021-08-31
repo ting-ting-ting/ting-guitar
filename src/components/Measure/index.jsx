@@ -6,10 +6,12 @@ const Measure = ({
 }) => {
   return (
     <div className="measure">
-      <span className="chord">C</span>
-      <span className="chord"></span>
-      <span className="chord">F</span>
-      <span className="chord"></span>
+      <div className="chords-wrapper">
+        <span className="chord">C</span>
+        <span className="chord"></span>
+        <span className="chord">F</span>
+        <span className="chord"></span>
+      </div>
     </div>
   );
 };
