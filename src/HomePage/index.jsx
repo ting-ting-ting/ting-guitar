@@ -19,6 +19,6 @@ const HomePage = () => (
       </ul>
     </nav>
   </div>
-)
+);
 
 export default React.memo(HomePage);

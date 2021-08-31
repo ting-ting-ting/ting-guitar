@@ -8,6 +8,6 @@ const GuitarTabPage = () => (
     <p>GuitarTabPage</p>
     <Link to="/">back</Link>
   </div>
-)
+);
 
 export default React.memo(GuitarTabPage);
