@@ -1,3 +1,13 @@
 .line {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 
+  .measure {
+    flex: 1;
+
+    & + .measure {
+      border-left: none;
+    }
+  }
 }
