@@ -1,4 +1,5 @@
 import React from 'react';
+import Chord from './Chord';
 import './index.scss';
 
 const Measure = ({
@@ -9,8 +10,8 @@ const Measure = ({
   return (
     <div className="measure">
       <div className="chords-wrapper">
-        {measure.map(chord => (
-          <span className="chord">C</span>
+        {measure.map((chord, idx) => (
+          <Chord key={idx} chord={chord} />
         ))}
       </div>
     </div>
