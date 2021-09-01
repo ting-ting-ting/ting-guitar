@@ -3,6 +3,7 @@ import {
   Link,
 } from "react-router-dom";
 import { tabData } from '../constants/tabData';
+import { TonalityContext } from '../context';
 import TonalitySelector from '../components/TonalitySelector';
 import './index.scss';
 
@@ -25,9 +26,15 @@ const GuitarTabPage = ({
         tonality={tonality}
         setTonality={setTonality}
       />
-      <div className="tab-container">
-        <Comp />
-      </div>
+      <TonalityContext.Provider
+        value={{
+          tonality,
+        }}
+      >
+        <div className="tab-container">
+          <Comp />
+        </div>
+      </TonalityContext.Provider>
       <Link to="/">back</Link>
     </div>
   );

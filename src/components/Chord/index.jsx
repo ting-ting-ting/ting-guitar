@@ -1,14 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import {
   numberTransfer,
   typeTransfer,
 } from '../../utils';
+import { TonalityContext } from '../../context';
 import './index.scss';
 
 const Chord = ({
   chord,
 }) => {
+  const { tonality } = useContext(TonalityContext);
+
   console.log('chord', chord);
+  console.log('context', tonality)
 
   if (!chord) {
     return (
