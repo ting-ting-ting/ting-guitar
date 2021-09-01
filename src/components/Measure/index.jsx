@@ -5,8 +5,6 @@ import './index.scss';
 const Measure = ({
   measure,
 }) => {
-  console.log('measure', measure);
-
   return (
     <div className="measure">
       <div className="chords-wrapper">

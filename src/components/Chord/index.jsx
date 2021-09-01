@@ -11,18 +11,23 @@ const Chord = ({
 }) => {
   const { tonality } = useContext(TonalityContext);
 
-  console.log('chord', chord);
-  console.log('context', tonality)
-
   if (!chord) {
     return (
       <span className="chord" />
     );
   }
 
+  const getChordName = () => {
+    if (!!chord.on) {
+      return `${numberTransfer({ number: chord.number, tonality })}${typeTransfer(chord.type)}/${numberTransfer({ number: chord.on, tonality })}`;
+    }
+
+    return `${numberTransfer({ number: chord.number, tonality })}${typeTransfer(chord.type)}`;
+  }
+
   return (
     <span className="chord">
-      {`${numberTransfer({ number: chord.number, tonality })}${typeTransfer(chord.type)}`}
+      {getChordName()}
     </span>
   );
 };

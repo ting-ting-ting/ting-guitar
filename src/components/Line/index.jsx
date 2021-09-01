@@ -15,9 +15,11 @@ const Line = ({
           <Measure key={idx} measure={measure} />
         ))}
       </div>
-      <div className="words-wrapper">
-        <p>{words}</p>
-      </div>
+      {!!words && (
+        <div className="words-wrapper">
+          <p>{words}</p>
+        </div>
+      )}
     </div>
   );
 };

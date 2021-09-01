@@ -3,6 +3,7 @@ import {
   NUMBER_FOUR,
   NUMBER_FIVE,
   NUMBER_SIX,
+  NUMBER_SEVEN,
 } from '../number';
 import {
   TYPE_MAJOR,
@@ -15,6 +16,56 @@ const maydayTabData = {
     name: '天使',
     singer: '五月天',
     lines: [
+      {
+        chords: [
+          [
+            {
+              number: NUMBER_ONE,
+              type: TYPE_MAJOR,
+            },
+            null,
+            {
+              number: NUMBER_FIVE,
+              on: NUMBER_SEVEN,
+              type: TYPE_MAJOR,
+            },
+            null,
+          ],
+          [
+            {
+              number: NUMBER_SIX,
+              type: TYPE_MINOR,
+            },
+            null,
+            {
+              number: NUMBER_FOUR,
+              type: TYPE_MAJOR,
+            },
+            null,
+          ],
+          [
+            {
+              number: NUMBER_ONE,
+              type: TYPE_MAJOR,
+            },
+            null,
+            {
+              number: NUMBER_FIVE,
+              type: TYPE_MAJOR,
+            },
+            null,
+          ],
+          [
+            {
+              number: NUMBER_ONE,
+              type: TYPE_MAJOR,
+            },
+            null,
+            null,
+            null,
+          ],
+        ],
+      },
       {
         chords: [
           [

@@ -19,8 +19,6 @@ const GuitarTabPage = ({
 
   const lines = tabData[id].lines;
 
-  console.log('tonality', tonality)
-
   return (
     <div className="guitar-tab">
       <TonalitySelector
