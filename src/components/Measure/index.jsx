@@ -1,5 +1,5 @@
 import React from 'react';
-import Chord from './Chord';
+import Chord from '../Chord';
 import './index.scss';
 
 const Measure = ({

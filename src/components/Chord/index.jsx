@@ -1,4 +1,6 @@
 import React from 'react';
+import { numberTransfer } from '../../utils/numberTransfer';
+import './index.scss';
 
 const Chord = ({
   chord,
@@ -12,7 +14,9 @@ const Chord = ({
   }
 
   return (
-    <span className="chord">C</span>
+    <span className="chord">
+      {numberTransfer(chord.number)}
+    </span>
   );
 };
 
