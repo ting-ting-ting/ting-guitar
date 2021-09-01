@@ -5,12 +5,11 @@
   justify-content: flex-start;
 
   .head-wrapper {
-    width: 600px;
+    width: 650px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 50px;
-    padding-left: 50px;
 
     @media (max-width: 767px) {
       width: auto;
@@ -29,7 +28,7 @@
   }
 
   .tab-container {
-    width: 500px;
+    width: 650px;
     margin: 0 auto;
 
     @media (max-width: 767px) {
