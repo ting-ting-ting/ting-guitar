@@ -12,9 +12,9 @@ import './App.scss';
 function App() {
   return (
     <div className="App">
-      <Header />
       <Router>
-        <div className="main-container">
+        <Header />
+        <div className="container main-container">
           <Switch>
             <Route path="/tab/:id" component={GuitarTabPage} />
             <Route path="/" component={HomePage} />

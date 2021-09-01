@@ -6,20 +6,24 @@
   p, h1 ,h2, h3, h4, h5 { margin: 0; line-height: 1.2; }
 
   header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
     background-color: #803220;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
 
-    p {
+    .logo {
       color: #F2E5DA;
+      text-decoration: none;
+      font-size: 26px;
     }
   }
 
-  .main-container {
-    padding-top: 50px;
-    padding-bottom: 80px;
+  .container {
     width: 1140px;
     margin-left: auto;
     margin-right: auto;
@@ -30,9 +34,19 @@
 
     @media (max-width: 767px) {
       width: auto;
-      padding-top: 30px;
       padding-left: 15px;
       padding-right: 15px;
+      margin-left: unset;
+      margin-right: unset;
+    }
+  }
+
+  .main-container {
+    padding-top: 100px;
+    padding-bottom: 120px;
+
+    @media (max-width: 767px) {
+      padding-top: 80px;
     }
   }
 }

@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import {
-  Link,
-} from "react-router-dom";
+import { Link } from "react-router-dom";
 import { tabData } from '../constants/tabs';
 import { TonalityContext } from '../context';
 import TonalitySelector from '../components/TonalitySelector';
