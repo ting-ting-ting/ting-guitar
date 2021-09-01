@@ -18,6 +18,25 @@ import {
   NUMBER_SEVEN,
 } from '../constants/number';
 import {
+  NOTE_NAME_C,
+  NOTE_NAME_C_SHARP,
+  NOTE_NAME_D_FLAT,
+  NOTE_NAME_D,
+  NOTE_NAME_D_SHARP,
+  NOTE_NAME_E_FLAT,
+  NOTE_NAME_E,
+  NOTE_NAME_F,
+  NOTE_NAME_F_SHARP,
+  NOTE_NAME_G_FLAT,
+  NOTE_NAME_G,
+  NOTE_NAME_G_SHARP,
+  NOTE_NAME_A_FLAT,
+  NOTE_NAME_A,
+  NOTE_NAME_A_SHARP,
+  NOTE_NAME_B_FLAT,
+  NOTE_NAME_B,
+} from '../constants/noteName';
+import {
   TYPE_MAJOR,
   TYPE_MAJOR_SEVEN,
   TYPE_MINOR,
@@ -76,6 +95,64 @@ export function numberTransfer(number) {
 
     case NUMBER_SEVEN:
       return '7';
+
+    default:
+      return '';
+  }
+}
+
+export function noteNameTransfer(note) {
+  switch (note) {
+    case NOTE_NAME_C:
+      return 'C';
+
+    case NOTE_NAME_C_SHARP:
+      return '#C';
+
+    case NOTE_NAME_D_FLAT:
+      return 'bD';
+
+    case NOTE_NAME_D:
+      return 'D';
+
+    case NOTE_NAME_D_SHARP:
+      return '#D';
+
+    case NOTE_NAME_E_FLAT:
+      return 'bE';
+
+    case NOTE_NAME_E:
+      return 'E';
+
+    case NOTE_NAME_F:
+      return 'F';
+
+    case NOTE_NAME_F_SHARP:
+      return '#F';
+
+    case NOTE_NAME_G_FLAT:
+      return 'bG';
+
+    case NOTE_NAME_G:
+      return 'G';
+
+    case NOTE_NAME_G_SHARP:
+      return '#G';
+
+    case NOTE_NAME_A_FLAT:
+      return 'bA';
+
+    case NOTE_NAME_A:
+      return 'A';
+
+    case NOTE_NAME_A_SHARP:
+      return '#A';
+
+    case NOTE_NAME_B_FLAT:
+      return 'bB';
+
+    case NOTE_NAME_B:
+      return 'B';
 
     default:
       return '';
