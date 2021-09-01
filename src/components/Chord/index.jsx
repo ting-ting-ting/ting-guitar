@@ -17,18 +17,45 @@ const Chord = ({
     );
   }
 
+  const {
+    number,
+    on,
+    type,
+    capture,
+  } = chord;
+
   const getChordName = () => {
-    if (!!chord.on) {
-      return `${numberTransfer({ number: chord.number, tonality })}${typeTransfer(chord.type)}/${numberTransfer({ number: chord.on, tonality })}`;
+    if (!!on) {
+      return `${numberTransfer({ number, tonality })}${typeTransfer(type)}/${numberTransfer({ number: on, tonality })}`;
     }
 
-    return `${numberTransfer({ number: chord.number, tonality })}${typeTransfer(chord.type)}`;
+    return `${numberTransfer({ number, tonality })}${typeTransfer(type)}`;
+  }
+
+  if (capture === 2) {
+    return (
+      <p className="chord">
+        <span>—</span>
+        <span>{getChordName()}</span>
+        <span>—</span>
+        <span>—</span>
+      </p>
+    );
+  }
+
+  if (capture === 3) {
+    return (
+      <p className="chord">
+        <span>—</span>
+        <span>{getChordName()}</span>
+      </p>
+    );
   }
 
   return (
-    <span className="chord">
+    <p className="chord">
       {getChordName()}
-    </span>
+    </p>
   );
 };
 

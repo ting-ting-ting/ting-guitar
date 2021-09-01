@@ -1,4 +1,12 @@
 .chord {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   color: #633919;
   line-height: 22px;
+
+  span {
+    flex: 1;
+    text-align: center;
+  }
 }

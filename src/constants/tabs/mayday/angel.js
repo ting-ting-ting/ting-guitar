@@ -439,6 +439,7 @@ const angelTabData = {
             number: NUMBER_FIVE,
             on: NUMBER_SEVEN,
             type: TYPE_MAJOR,
+            capture: 2,
           },
         ],
       ],
