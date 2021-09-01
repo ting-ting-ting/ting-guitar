@@ -5,17 +5,22 @@
   justify-content: flex-start;
 
   .head-wrapper {
-    width: 650px;
+    width: 800px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 50px;
+
+    @media (max-width: 1199px) {
+      width: 650px;
+    }
 
     @media (max-width: 767px) {
       width: auto;
       padding-left: 0;
       flex-direction: column;
       align-items: flex-start;
+      margin-bottom: 30px;
     }
 
     .back-link {
@@ -28,8 +33,12 @@
   }
 
   .tab-container {
-    width: 650px;
+    width: 800px;
     margin: 0 auto;
+
+    @media (max-width: 1199px) {
+      width: 650px;
+    }
 
     @media (max-width: 767px) {
       width: auto;
