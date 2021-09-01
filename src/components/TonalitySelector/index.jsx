@@ -8,6 +8,7 @@ import {
   NOTE_NAME_A,
   NOTE_NAME_B,
 } from '../../constants/noteName';
+import TonalityButton from './TonalityButton';
 import './index.scss';
 
 const TonalitySelector = ({
@@ -16,13 +17,48 @@ const TonalitySelector = ({
 }) => {
   return (
     <div className="tonality-selector">
-      <button type="button" className="tonality-btn" onClick={() => setTonality(NOTE_NAME_C)}>C</button>
-      <button type="button" className="tonality-btn" onClick={() => setTonality(NOTE_NAME_D)}>D</button>
-      <button type="button" className="tonality-btn" onClick={() => setTonality(NOTE_NAME_E)}>E</button>
-      <button type="button" className="tonality-btn" onClick={() => setTonality(NOTE_NAME_F)}>F</button>
-      <button type="button" className="tonality-btn" onClick={() => setTonality(NOTE_NAME_G)}>G</button>
-      <button type="button" className="tonality-btn" onClick={() => setTonality(NOTE_NAME_A)}>A</button>
-      <button type="button" className="tonality-btn" onClick={() => setTonality(NOTE_NAME_B)}>B</button>
+      <TonalityButton
+        name="C"
+        value={NOTE_NAME_C}
+        tonality={tonality}
+        setTonality={setTonality}
+      />
+      <TonalityButton
+        name="D"
+        value={NOTE_NAME_D}
+        tonality={tonality}
+        setTonality={setTonality}
+      />
+      <TonalityButton
+        name="E"
+        value={NOTE_NAME_E}
+        tonality={tonality}
+        setTonality={setTonality}
+      />
+      <TonalityButton
+        name="F"
+        value={NOTE_NAME_F}
+        tonality={tonality}
+        setTonality={setTonality}
+      />
+      <TonalityButton
+        name="G"
+        value={NOTE_NAME_G}
+        tonality={tonality}
+        setTonality={setTonality}
+      />
+      <TonalityButton
+        name="A"
+        value={NOTE_NAME_A}
+        tonality={tonality}
+        setTonality={setTonality}
+      />
+      <TonalityButton
+        name="B"
+        value={NOTE_NAME_B}
+        tonality={tonality}
+        setTonality={setTonality}
+      />
     </div>
   );
 };
