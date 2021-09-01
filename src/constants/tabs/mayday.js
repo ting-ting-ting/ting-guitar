@@ -18,7 +18,7 @@ const maydayTabData = {
     lines: [
       {
         title: '前奏',
-        chords: [
+        measures: [
           [
             {
               number: NUMBER_ONE,
@@ -69,7 +69,7 @@ const maydayTabData = {
       },
       {
         title: '主歌',
-        chords: [
+        measures: [
           [
             {
               number: NUMBER_ONE,

@@ -5,7 +5,7 @@ import './index.scss';
 const Line = ({
   line: {
     title,
-    chords,
+    measures,
     lyrics,
   },
 }) => {
@@ -17,7 +17,7 @@ const Line = ({
         </div>
       )}
       <div className="measures-wrapper">
-        {chords.map((measure, idx) => (
+        {measures.map((measure, idx) => (
           <Measure key={idx} measure={measure} />
         ))}
       </div>
