@@ -24,7 +24,8 @@ const GuitarTabPage = ({
 
   return (
     <div className="guitar-tab">
-      <div className="tonality-selector-wrapper">
+      <div className="head-wrapper">
+        <Link to="/" className="back-link">返回</Link>
         <TonalitySelector
           tonality={tonality}
           setTonality={setTonality}
@@ -42,7 +43,6 @@ const GuitarTabPage = ({
           ))}
         </div>
       </TonalityContext.Provider>
-      <Link to="/">back</Link>
     </div>
   );
 };
