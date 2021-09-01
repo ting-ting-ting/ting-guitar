@@ -4,12 +4,26 @@
   align-items: flex-start;
   justify-content: flex-start;
 
+  .tonality-selector-wrapper {
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 50px;
+  }
+
   .tab-container {
     width: 500px;
     margin: 0 auto;
 
     @media (max-width: 767px) {
       width: auto;
+    }
+
+    h1 {
+      text-align: center;
+      color: #633919;
+      margin-bottom: 30px;
     }
   }
 }

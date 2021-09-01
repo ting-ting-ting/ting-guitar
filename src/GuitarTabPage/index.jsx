@@ -17,20 +17,26 @@ const GuitarTabPage = ({
 }) => {
   const [tonality, setTonality] = useState(null);
 
-  const lines = tabData[id].lines;
+  const {
+    name,
+    lines,
+  } = tabData[id];
 
   return (
     <div className="guitar-tab">
-      <TonalitySelector
-        tonality={tonality}
-        setTonality={setTonality}
-      />
+      <div className="tonality-selector-wrapper">
+        <TonalitySelector
+          tonality={tonality}
+          setTonality={setTonality}
+        />
+      </div>
       <TonalityContext.Provider
         value={{
           tonality,
         }}
       >
         <div className="tab-container">
+          <h1>{name}</h1>
           {lines.map((line, idx) => (
             <Line key={idx} line={line} />
           ))}

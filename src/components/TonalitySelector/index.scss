@@ -10,6 +10,7 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+    color: #633919;
     width: 30px;
     height: 30px;
     border-radius: 15px;
@@ -17,7 +18,7 @@
 
     &:hover, &.is-active {
       background-color: #633919;
-      color: #FFF;
+      color: #F2E5DA;
     }
   }
 }
