@@ -5,14 +5,18 @@ import './index.scss';
 const Line = ({
   line,
 }) => {
-  console.log('line', line);
+  const chords = line.chords;
+  const words = line.words;
 
   return (
     <div className="line">
       <div className="measures-wrapper">
-        {line.chords.map((measure, idx) => (
+        {chords.map((measure, idx) => (
           <Measure key={idx} measure={measure} />
         ))}
+      </div>
+      <div className="words-wrapper">
+        <p>{words}</p>
       </div>
     </div>
   );
