@@ -1,5 +1,5 @@
-import maydayTabData from './mayday';
-import piaTabData from './pia';
+import maydayTabData from './mayday/index';
+import piaTabData from './pia/index';
 
 export const tabData = {
   ...maydayTabData,
