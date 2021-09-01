@@ -22,7 +22,7 @@ const Chord = ({
 
   return (
     <span className="chord">
-      {`${numberTransfer(chord.number)}${typeTransfer(chord.type)}`}
+      {`${numberTransfer({ number: chord.number, tonality })}${typeTransfer(chord.type)}`}
     </span>
   );
 };

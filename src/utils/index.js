@@ -43,10 +43,38 @@ import {
   TYPE_MINOR_SEVEN,
 } from '../constants/type';
 
-export function numberTransfer(number) {
+export function numberTransfer({
+  number,
+  tonality,
+}) {
   switch (number) {
-    case NUMBER_ONE:
-      return '1';
+    case NUMBER_ONE: {
+      switch (tonality) {
+        case NOTE_NAME_C:
+          return 'C';
+
+        case NOTE_NAME_D:
+          return 'D';
+
+        case NOTE_NAME_E:
+          return 'E';
+
+        case NOTE_NAME_F:
+          return 'F';
+
+        case NOTE_NAME_G:
+          return 'G';
+
+        case NOTE_NAME_A:
+          return 'A';
+
+        case NOTE_NAME_B:
+          return 'B';
+
+        default:
+          return '1';
+      }
+    }
 
     case NUMBER_ONE_SHARP:
       return '#1';
