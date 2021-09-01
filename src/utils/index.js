@@ -79,8 +79,33 @@ export function numberTransfer({
     case NUMBER_ONE_SHARP:
       return '#1';
 
-    case NUMBER_TWO_FLAT:
-      return 'b2';
+    case NUMBER_TWO_FLAT: {
+      switch (tonality) {
+        case NOTE_NAME_C:
+          return 'bD';
+
+        case NOTE_NAME_D:
+          return 'bE';
+
+        case NOTE_NAME_E:
+          return 'F';
+
+        case NOTE_NAME_F:
+          return 'bG';
+
+        case NOTE_NAME_G:
+          return 'bA';
+
+        case NOTE_NAME_A:
+          return 'bB';
+
+        case NOTE_NAME_B:
+          return 'C';
+
+        default:
+          return 'b2';
+      }
+    }
 
     case NUMBER_TWO: {
       switch (tonality) {
@@ -243,8 +268,33 @@ export function numberTransfer({
     case NUMBER_SIX_SHARP:
       return '#6';
 
-    case NUMBER_SEVEN_FLAT:
-      return 'b7';
+    case NUMBER_SEVEN_FLAT: {
+      switch (tonality) {
+        case NOTE_NAME_C:
+          return 'bB';
+
+        case NOTE_NAME_D:
+          return 'C';
+
+        case NOTE_NAME_E:
+          return 'D';
+
+        case NOTE_NAME_F:
+          return 'bE';
+
+        case NOTE_NAME_G:
+          return 'F';
+
+        case NOTE_NAME_A:
+          return 'G';
+
+        case NOTE_NAME_B:
+          return 'A';
+
+        default:
+          return 'b7';
+      }
+    }
 
     case NUMBER_SEVEN: {
       switch (tonality) {
