@@ -150,6 +150,7 @@ const angelTabData = {
       lyrics: ['你就是我的天使 給我快樂的天使 甚至我學會了飛翔'],
     },
     {
+      title: '導歌',
       measures: [
         [
           {
@@ -200,6 +201,65 @@ const angelTabData = {
         ],
       ],
       lyrics: ['不管世界變得怎麼樣 只要有你就會是天堂'],
+    },
+    {
+      title: '副歌',
+      measures: [
+        [
+          {
+            number: NUMBER_ONE,
+            type: TYPE_MAJOR,
+          },
+          null,
+          {
+            number: NUMBER_FIVE,
+            type: TYPE_MAJOR,
+          },
+          null,
+        ],
+        [
+          {
+            number: NUMBER_SIX,
+            type: TYPE_MINOR,
+          },
+          null,
+          {
+            number: NUMBER_THREE,
+            type: TYPE_MINOR,
+          },
+          null,
+        ],
+      ],
+      lyrics: ['★像孩子依賴著肩膀 像眼淚依賴著臉龐'],
+    },
+    {
+      measures: [
+        [
+          {
+            number: NUMBER_FOUR,
+            type: TYPE_MAJOR,
+          },
+          null,
+          {
+            number: NUMBER_ONE,
+            type: TYPE_MAJOR,
+          },
+          null,
+        ],
+        [
+          {
+            number: NUMBER_FOUR,
+            type: TYPE_MAJOR,
+          },
+          null,
+          {
+            number: NUMBER_FIVE,
+            type: TYPE_MAJOR,
+          },
+          null,
+        ],
+      ],
+      lyrics: ['你就像天使一樣 給我依賴 給我力量'],
     },
   ],
 };
