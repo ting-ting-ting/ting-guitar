@@ -26,7 +26,6 @@ const angelTabData = {
           null,
           {
             number: NUMBER_FIVE,
-            on: NUMBER_SEVEN,
             type: TYPE_MAJOR,
           },
           null,
@@ -183,7 +182,7 @@ const angelTabData = {
       measures: [
         [
           {
-            number: NUMBER_FIVE,
+            number: NUMBER_FOUR,
             type: TYPE_MAJOR,
           },
           null,
@@ -192,7 +191,7 @@ const angelTabData = {
         ],
         [
           {
-            number: NUMBER_FOUR,
+            number: NUMBER_FIVE,
             type: TYPE_MAJOR,
           },
           null,
@@ -260,6 +259,64 @@ const angelTabData = {
         ],
       ],
       lyrics: ['你就像天使一樣 給我依賴 給我力量'],
+    },
+    {
+      measures: [
+        [
+          {
+            number: NUMBER_ONE,
+            type: TYPE_MAJOR,
+          },
+          null,
+          {
+            number: NUMBER_FIVE,
+            type: TYPE_MAJOR,
+          },
+          null,
+        ],
+        [
+          {
+            number: NUMBER_SIX,
+            type: TYPE_MINOR,
+          },
+          null,
+          {
+            number: NUMBER_THREE,
+            type: TYPE_MINOR,
+          },
+          null,
+        ],
+      ],
+      lyrics: ['像詩人依賴著月亮 像海豚依賴海洋'],
+    },
+    {
+      measures: [
+        [
+          {
+            number: NUMBER_FOUR,
+            type: TYPE_MAJOR,
+          },
+          null,
+          {
+            number: NUMBER_ONE,
+            type: TYPE_MAJOR,
+          },
+          null,
+        ],
+        [
+          {
+            number: NUMBER_FOUR,
+            type: TYPE_MAJOR,
+          },
+          null,
+          {
+            number: NUMBER_FIVE,
+            type: TYPE_MAJOR,
+          },
+          null,
+        ],
+      ],
+      lyrics: ['你是天使 你是天使 你是我最初和最後的天堂'],
     },
   ],
 };
