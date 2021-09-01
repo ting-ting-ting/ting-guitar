@@ -77,7 +77,12 @@ const angelTabData = {
           },
           null,
           null,
-          null,
+          {
+            number: NUMBER_FIVE,
+            on: NUMBER_SEVEN,
+            type: TYPE_MAJOR,
+            capture: 3,
+          },
         ],
         [
           {
@@ -118,7 +123,12 @@ const angelTabData = {
           },
           null,
           null,
-          null,
+          {
+            number: NUMBER_FIVE,
+            on: NUMBER_SEVEN,
+            type: TYPE_MAJOR,
+            capture: 3,
+          },
         ],
         [
           {
