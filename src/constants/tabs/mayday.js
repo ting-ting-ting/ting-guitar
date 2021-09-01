@@ -12,7 +12,7 @@ import {
 const maydayTabData = {
   'mayday-1': {
     id: 'mayday-1',
-    title: '天使',
+    name: '天使',
     singer: '五月天',
     lines: [
       {

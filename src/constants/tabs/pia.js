@@ -12,7 +12,7 @@ import {
 const piaTabData = {
   'pia-1': {
     id: 'pia-1',
-    title: '情緒化',
+    name: '情緒化',
     singer: 'PiA',
     lines: [],
   },
