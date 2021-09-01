@@ -3,21 +3,27 @@ import Measure from '../Measure';
 import './index.scss';
 
 const Line = ({
-  line,
+  line: {
+    title,
+    chords,
+    lyrics,
+  },
 }) => {
-  const chords = line.chords;
-  const words = line.words;
-
   return (
     <div className="line">
+      {!!title && (
+        <div className="title-wrapper">
+          <p>{title}</p>
+        </div>
+      )}
       <div className="measures-wrapper">
         {chords.map((measure, idx) => (
           <Measure key={idx} measure={measure} />
         ))}
       </div>
-      {!!words && (
-        <div className="words-wrapper">
-          <p>{words}</p>
+      {!!lyrics && (
+        <div className="lyrics-wrapper">
+          <p>{lyrics}</p>
         </div>
       )}
     </div>

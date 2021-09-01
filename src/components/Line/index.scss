@@ -1,4 +1,17 @@
 .line {
+  & + .line {
+    margin-top: 30px;
+  }
+
+  .title-wrapper {
+    margin-bottom: 8px;
+
+    p {
+      color: #803220;
+      font-weight: 600;
+    }
+  }
+
   .measures-wrapper {
     display: flex;
     align-items: center;
@@ -15,7 +28,7 @@
     }
   }
 
-  .words-wrapper {
+  .lyrics-wrapper {
     margin-top: 15px;
 
     p {

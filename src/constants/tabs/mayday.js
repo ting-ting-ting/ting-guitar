@@ -17,6 +17,7 @@ const maydayTabData = {
     singer: '五月天',
     lines: [
       {
+        title: '前奏',
         chords: [
           [
             {
@@ -67,6 +68,7 @@ const maydayTabData = {
         ],
       },
       {
+        title: '主歌',
         chords: [
           [
             {
@@ -105,7 +107,7 @@ const maydayTabData = {
             null,
           ],
         ],
-        words: '你就是我的天使 保護著我的天使 從此我再也沒有憂傷',
+        lyrics: '你就是我的天使 保護著我的天使 從此我再也沒有憂傷',
       }
     ],
   },
