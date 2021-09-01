@@ -5,18 +5,23 @@
   background-color: #FFF;
   padding: 10px 15px;
   border-radius: 30px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
 
   .tonality-btn {
     background-color: transparent;
     border: none;
     cursor: pointer;
     color: #633919;
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
     margin: 0 8px;
 
-    &:hover, &.is-active {
+    &:hover {
+      color: #803220;
+    }
+
+    &.is-active {
       background-color: #633919;
       color: #F2E5DA;
     }
