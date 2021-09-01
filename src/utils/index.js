@@ -17,6 +17,12 @@ import {
   NUMBER_SEVEN_FLAT,
   NUMBER_SEVEN,
 } from '../constants/number';
+import {
+  TYPE_MAJOR,
+  TYPE_MAJOR_SEVEN,
+  TYPE_MINOR,
+  TYPE_MINOR_SEVEN,
+} from '../constants/type';
 
 export function numberTransfer(number) {
   switch (number) {
@@ -70,6 +76,25 @@ export function numberTransfer(number) {
 
     case NUMBER_SEVEN:
       return '7';
+
+    default:
+      return '';
+  }
+}
+
+export function typeTransfer(type) {
+  switch (type) {
+    case TYPE_MAJOR:
+      return '';
+
+    case TYPE_MAJOR_SEVEN:
+      return 'maj7';
+
+    case TYPE_MINOR:
+      return 'm';
+
+    case TYPE_MINOR_SEVEN:
+      return 'm7';
 
     default:
       return '';

@@ -1,5 +1,5 @@
 import React from 'react';
-import { numberTransfer } from '../../utils/numberTransfer';
+import { numberTransfer } from '../../utils';
 import './index.scss';
 
 const Chord = ({
