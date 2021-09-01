@@ -5,6 +5,7 @@ import {
   NUMBER_FOUR,
   NUMBER_FIVE,
   NUMBER_SIX,
+  NUMBER_SEVEN,
 } from '../../number';
 import {
   TYPE_MAJOR,
@@ -402,7 +403,53 @@ const angelTabData = {
         ],
         [
           {
+            number: NUMBER_FIVE,
+            type: TYPE_MAJOR,
+          },
+          null,
+          {
             number: NUMBER_FOUR,
+            type: TYPE_MAJOR,
+          },
+          {
+            number: NUMBER_FIVE,
+            type: TYPE_MAJOR,
+          },
+        ],
+      ],
+      lyrics: ['回到★'],
+    },
+    {
+      title: '間奏3',
+      measures: [
+        [
+          {
+            number: NUMBER_FOUR,
+            type: TYPE_MAJOR,
+          },
+          {
+            number: NUMBER_FIVE,
+            type: TYPE_MAJOR,
+          },
+          {
+            number: NUMBER_SIX,
+            type: TYPE_MINOR,
+          },
+          {
+            number: NUMBER_FIVE,
+            on: NUMBER_SEVEN,
+            type: TYPE_MAJOR,
+          },
+        ],
+      ],
+      lyrics: ['回到★'],
+    },
+    {
+      title: '尾奏',
+      measures: [
+        [
+          {
+            number: NUMBER_ONE,
             type: TYPE_MAJOR,
           },
           null,
@@ -412,8 +459,40 @@ const angelTabData = {
           },
           null,
         ],
+        [
+          {
+            number: NUMBER_SIX,
+            type: TYPE_MINOR,
+          },
+          null,
+          {
+            number: NUMBER_FOUR,
+            type: TYPE_MAJOR,
+          },
+          null,
+        ],
+        [
+          {
+            number: NUMBER_ONE,
+            type: TYPE_MAJOR,
+          },
+          null,
+          {
+            number: NUMBER_FIVE,
+            type: TYPE_MAJOR,
+          },
+          null,
+        ],
+        [
+          {
+            number: NUMBER_ONE,
+            type: TYPE_MAJOR,
+          },
+          null,
+          null,
+          null,
+        ],
       ],
-      lyrics: ['回到★'],
     },
   ],
 };
