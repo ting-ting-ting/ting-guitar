@@ -5,6 +5,7 @@ import {
 import { tabData } from '../constants/tabData';
 import { TonalityContext } from '../context';
 import TonalitySelector from '../components/TonalitySelector';
+import Line from '../components/Line';
 import './index.scss';
 
 const GuitarTabPage = ({
@@ -16,7 +17,7 @@ const GuitarTabPage = ({
 }) => {
   const [tonality, setTonality] = useState(null);
 
-  const Comp = tabData[id].component;
+  const lines = tabData[id].lines;
 
   console.log('tonality', tonality)
 
@@ -32,7 +33,9 @@ const GuitarTabPage = ({
         }}
       >
         <div className="tab-container">
-          <Comp />
+          {lines.map((line, idx) => (
+            <Line key={idx} line={line} />
+          ))}
         </div>
       </TonalityContext.Provider>
       <Link to="/">back</Link>
