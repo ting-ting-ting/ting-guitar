@@ -138,8 +138,33 @@ export function numberTransfer({
     case NUMBER_TWO_SHARP:
       return '#2';
 
-    case NUMBER_THREE_FLAT:
-      return 'b3';
+    case NUMBER_THREE_FLAT: {
+      switch (tonality) {
+        case NOTE_NAME_C:
+          return 'bE';
+
+        case NOTE_NAME_D:
+          return 'F';
+
+        case NOTE_NAME_E:
+          return 'G';
+
+        case NOTE_NAME_F:
+          return 'bA';
+
+        case NOTE_NAME_G:
+          return 'bB';
+
+        case NOTE_NAME_A:
+          return 'C';
+
+        case NOTE_NAME_B:
+          return 'D';
+
+        default:
+          return 'b3';
+      }
+    }
 
     case NUMBER_THREE: {
       switch (tonality) {
