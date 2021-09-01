@@ -23,9 +23,17 @@ const Line = ({
       </div>
       {!!lyrics && (
         <div className="lyrics-wrapper">
-          {lyrics.map((l, idx) => (
-            <p key={idx}>{l}</p>
-          ))}
+          {lyrics.map((l, idx) => {
+            if (lyrics.length > 1) {
+              return (
+                <p key={idx}>{`${idx + 1}. ${l}`}</p>
+              );
+            }
+
+            return (
+              <p key={idx}>{l}</p>
+            );
+          })}
         </div>
       )}
     </div>
