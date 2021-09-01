@@ -1,14 +1,15 @@
 import {
   NUMBER_ONE,
+  NUMBER_TWO,
   NUMBER_THREE,
   NUMBER_FOUR,
   NUMBER_FIVE,
   NUMBER_SIX,
-  NUMBER_SEVEN,
 } from '../../number';
 import {
   TYPE_MAJOR,
   TYPE_MINOR,
+  TYPE_MINOR_SEVEN,
 } from '../../type';
 
 const angelTabData = {
@@ -317,6 +318,102 @@ const angelTabData = {
         ],
       ],
       lyrics: ['你是天使 你是天使 你是我最初和最後的天堂'],
+    },
+    {
+      title: '間奏1',
+      measures: [
+        [
+          {
+            number: NUMBER_ONE,
+            type: TYPE_MAJOR,
+          },
+          null,
+          {
+            number: NUMBER_FIVE,
+            type: TYPE_MAJOR,
+          },
+          null,
+        ],
+        [
+          {
+            number: NUMBER_SIX,
+            type: TYPE_MINOR,
+          },
+          null,
+          {
+            number: NUMBER_FOUR,
+            type: TYPE_MAJOR,
+          },
+          null,
+        ],
+        [
+          {
+            number: NUMBER_ONE,
+            type: TYPE_MAJOR,
+          },
+          null,
+          {
+            number: NUMBER_FIVE,
+            type: TYPE_MAJOR,
+          },
+          null,
+        ],
+        [
+          {
+            number: NUMBER_ONE,
+            type: TYPE_MAJOR,
+          },
+          null,
+          null,
+          null,
+        ],
+      ],
+      lyrics: ['回到▲'],
+    },
+    {
+      title: '間奏2',
+      measures: [
+        [
+          {
+            number: NUMBER_FOUR,
+            type: TYPE_MAJOR,
+          },
+          null,
+          null,
+          null,
+        ],
+        [
+          {
+            number: NUMBER_ONE,
+            type: TYPE_MAJOR,
+          },
+          null,
+          null,
+          null,
+        ],
+        [
+          {
+            number: NUMBER_TWO,
+            type: TYPE_MINOR_SEVEN,
+          },
+          null,
+          null,
+          null,
+        ],
+        [
+          {
+            number: NUMBER_FOUR,
+            type: TYPE_MAJOR,
+          },
+          null,
+          {
+            number: NUMBER_FIVE,
+            type: TYPE_MAJOR,
+          },
+          null,
+        ],
+      ],
+      lyrics: ['回到★'],
     },
   ],
 };
