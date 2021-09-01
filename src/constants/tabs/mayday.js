@@ -3,15 +3,15 @@ import {
   NUMBER_FOUR,
   NUMBER_FIVE,
   NUMBER_SIX,
-} from './number';
+} from '../number';
 import {
   TYPE_MAJOR,
   TYPE_MINOR,
-} from './type';
+} from '../type';
 
-export const tabData = {
-  '1': {
-    id: 1,
+const maydayTabData = {
+  'mayday-1': {
+    id: 'mayday-1',
     title: '天使',
     singer: '五月天',
     lines: [
@@ -58,10 +58,6 @@ export const tabData = {
       }
     ],
   },
-  '2': {
-    id: 2,
-    title: '情緒化',
-    singer: 'PiA',
-    lines: [],
-  },
 };
+
+export default maydayTabData;

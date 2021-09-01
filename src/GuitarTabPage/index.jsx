@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import {
   Link,
 } from "react-router-dom";
-import { tabData } from '../constants/tabData';
+import { tabData } from '../constants/tabs';
 import { TonalityContext } from '../context';
 import TonalitySelector from '../components/TonalitySelector';
 import Line from '../components/Line';
