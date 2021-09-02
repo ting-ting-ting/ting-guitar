@@ -22,6 +22,16 @@ const c = {
   type: TYPE_MAJOR,
 };
 
+const f = {
+  number: NUMBER_FOUR,
+  type: TYPE_MAJOR,
+};
+
+const g = {
+  number: NUMBER_FIVE,
+  type: TYPE_MAJOR,
+};
+
 const angelTabData = {
   name: '天使',
   singer: '五月天',
@@ -36,10 +46,7 @@ const angelTabData = {
         [
           c,
           null,
-          {
-            number: NUMBER_FIVE,
-            type: TYPE_MAJOR,
-          },
+          g,
           null,
         ],
         [
@@ -48,19 +55,13 @@ const angelTabData = {
             type: TYPE_MINOR,
           },
           null,
-          {
-            number: NUMBER_FOUR,
-            type: TYPE_MAJOR,
-          },
+          f,
           null,
         ],
         [
           c,
           null,
-          {
-            number: NUMBER_FIVE,
-            type: TYPE_MAJOR,
-          },
+          g,
           null,
         ],
         [
@@ -95,19 +96,13 @@ const angelTabData = {
           null,
         ],
         [
-          {
-            number: NUMBER_FOUR,
-            type: TYPE_MAJOR,
-          },
+          f,
           null,
           null,
           null,
         ],
         [
-          {
-            number: NUMBER_FIVE,
-            type: TYPE_MAJOR,
-          },
+          g,
           null,
           null,
           null,
@@ -138,19 +133,13 @@ const angelTabData = {
           null,
         ],
         [
-          {
-            number: NUMBER_FOUR,
-            type: TYPE_MAJOR,
-          },
+          f,
           null,
           null,
           null,
         ],
         [
-          {
-            number: NUMBER_FIVE,
-            type: TYPE_MAJOR,
-          },
+          g,
           null,
           null,
           null,
@@ -174,10 +163,7 @@ const angelTabData = {
           null,
         ],
         [
-          {
-            number: NUMBER_FOUR,
-            type: TYPE_MAJOR,
-          },
+          f,
           null,
           c,
           null,
@@ -188,19 +174,13 @@ const angelTabData = {
     {
       measures: [
         [
-          {
-            number: NUMBER_FOUR,
-            type: TYPE_MAJOR,
-          },
+          f,
           null,
           null,
           null,
         ],
         [
-          {
-            number: NUMBER_FIVE,
-            type: TYPE_MAJOR,
-          },
+          g,
           null,
           null,
           null,
@@ -214,10 +194,7 @@ const angelTabData = {
         [
           c,
           null,
-          {
-            number: NUMBER_FIVE,
-            type: TYPE_MAJOR,
-          },
+          g,
           null,
         ],
         [
@@ -238,24 +215,15 @@ const angelTabData = {
     {
       measures: [
         [
-          {
-            number: NUMBER_FOUR,
-            type: TYPE_MAJOR,
-          },
+          f,
           null,
           c,
           null,
         ],
         [
-          {
-            number: NUMBER_FOUR,
-            type: TYPE_MAJOR,
-          },
+          f,
           null,
-          {
-            number: NUMBER_FIVE,
-            type: TYPE_MAJOR,
-          },
+          g,
           null,
         ],
       ],
@@ -266,10 +234,7 @@ const angelTabData = {
         [
           c,
           null,
-          {
-            number: NUMBER_FIVE,
-            type: TYPE_MAJOR,
-          },
+          g,
           null,
         ],
         [
@@ -290,24 +255,15 @@ const angelTabData = {
     {
       measures: [
         [
-          {
-            number: NUMBER_FOUR,
-            type: TYPE_MAJOR,
-          },
+          f,
           null,
           c,
           null,
         ],
         [
-          {
-            number: NUMBER_FOUR,
-            type: TYPE_MAJOR,
-          },
+          f,
           null,
-          {
-            number: NUMBER_FIVE,
-            type: TYPE_MAJOR,
-          },
+          g,
           null,
         ],
       ],
@@ -319,10 +275,7 @@ const angelTabData = {
         [
           c,
           null,
-          {
-            number: NUMBER_FIVE,
-            type: TYPE_MAJOR,
-          },
+          g,
           null,
         ],
         [
@@ -331,19 +284,13 @@ const angelTabData = {
             type: TYPE_MINOR,
           },
           null,
-          {
-            number: NUMBER_FOUR,
-            type: TYPE_MAJOR,
-          },
+          f,
           null,
         ],
         [
           c,
           null,
-          {
-            number: NUMBER_FIVE,
-            type: TYPE_MAJOR,
-          },
+          g,
           null,
         ],
         [
@@ -359,10 +306,7 @@ const angelTabData = {
       title: '間奏2',
       measures: [
         [
-          {
-            number: NUMBER_FOUR,
-            type: TYPE_MAJOR,
-          },
+          f,
           null,
           null,
           null,
@@ -383,19 +327,10 @@ const angelTabData = {
           null,
         ],
         [
-          {
-            number: NUMBER_FIVE,
-            type: TYPE_MAJOR,
-          },
+          g,
           null,
-          {
-            number: NUMBER_FOUR,
-            type: TYPE_MAJOR,
-          },
-          {
-            number: NUMBER_FIVE,
-            type: TYPE_MAJOR,
-          },
+          f,
+          g,
         ],
       ],
       lyrics: ['回到★'],
@@ -404,14 +339,8 @@ const angelTabData = {
       title: '間奏3',
       measures: [
         [
-          {
-            number: NUMBER_FOUR,
-            type: TYPE_MAJOR,
-          },
-          {
-            number: NUMBER_FIVE,
-            type: TYPE_MAJOR,
-          },
+          f,
+          g,
           {
             number: NUMBER_SIX,
             type: TYPE_MINOR,
@@ -432,10 +361,7 @@ const angelTabData = {
         [
           c,
           null,
-          {
-            number: NUMBER_FIVE,
-            type: TYPE_MAJOR,
-          },
+          g,
           null,
         ],
         [
@@ -444,19 +370,13 @@ const angelTabData = {
             type: TYPE_MINOR,
           },
           null,
-          {
-            number: NUMBER_FOUR,
-            type: TYPE_MAJOR,
-          },
+          f,
           null,
         ],
         [
           c,
           null,
-          {
-            number: NUMBER_FIVE,
-            type: TYPE_MAJOR,
-          },
+          g,
           null,
         ],
         [
