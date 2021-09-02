@@ -16,6 +16,17 @@ const styles = StyleSheet.create({
     fontFamily: 'Noto Sans TC',
     color: '#633919',
   },
+  line: {
+    marginBottom: 30,
+  },
+  lineTitleWrapper: {
+    marginBottom: 8,
+  },
+  lineTitle: {
+    fontFamily: 'Noto Sans TC',
+    color: '#803220',
+    fontWeight: '600',
+  },
 });
 
 Font.register({
@@ -34,6 +45,15 @@ const PdfDocument = ({
     <Document>
       <Page size="A4" style={styles.page}>
         <Text style={styles.title}>{name}</Text>
+        {lines.map(line => (
+          <View style={styles.line}>
+            {!!line.title && (
+              <View style={styles.lineTitleWrapper}>
+                <Text style={styles.lineTitle}>{line.title}</Text>
+              </View>
+            )}
+          </View>
+        ))}
       </Page>
     </Document>
   );
