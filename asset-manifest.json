@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/ting-guitar/static/css/main.f7cc08cd.chunk.css",
-    "main.js": "/ting-guitar/static/js/main.f09e1062.chunk.js",
-    "main.js.map": "/ting-guitar/static/js/main.f09e1062.chunk.js.map",
+    "main.js": "/ting-guitar/static/js/main.3d4bf650.chunk.js",
+    "main.js.map": "/ting-guitar/static/js/main.3d4bf650.chunk.js.map",
     "runtime-main.js": "/ting-guitar/static/js/runtime-main.feafd815.js",
     "runtime-main.js.map": "/ting-guitar/static/js/runtime-main.feafd815.js.map",
-    "static/js/2.731e8c94.chunk.js": "/ting-guitar/static/js/2.731e8c94.chunk.js",
-    "static/js/2.731e8c94.chunk.js.map": "/ting-guitar/static/js/2.731e8c94.chunk.js.map",
+    "static/js/2.0e7da68d.chunk.js": "/ting-guitar/static/js/2.0e7da68d.chunk.js",
+    "static/js/2.0e7da68d.chunk.js.map": "/ting-guitar/static/js/2.0e7da68d.chunk.js.map",
     "static/js/3.0f07a3e4.chunk.js": "/ting-guitar/static/js/3.0f07a3e4.chunk.js",
     "static/js/3.0f07a3e4.chunk.js.map": "/ting-guitar/static/js/3.0f07a3e4.chunk.js.map",
     "index.html": "/ting-guitar/index.html",
     "static/css/main.f7cc08cd.chunk.css.map": "/ting-guitar/static/css/main.f7cc08cd.chunk.css.map",
-    "static/js/2.731e8c94.chunk.js.LICENSE.txt": "/ting-guitar/static/js/2.731e8c94.chunk.js.LICENSE.txt"
+    "static/js/2.0e7da68d.chunk.js.LICENSE.txt": "/ting-guitar/static/js/2.0e7da68d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.feafd815.js",
-    "static/js/2.731e8c94.chunk.js",
+    "static/js/2.0e7da68d.chunk.js",
     "static/css/main.f7cc08cd.chunk.css",
-    "static/js/main.f09e1062.chunk.js"
+    "static/js/main.3d4bf650.chunk.js"
   ]
 }
