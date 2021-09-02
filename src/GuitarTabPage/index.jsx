@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from "react-router-dom";
+import { noteNameTransfer } from '../utils';
 import { tabData } from '../constants/tabs';
 import { TonalityContext } from '../context';
 import TonalitySelector from '../components/TonalitySelector';
@@ -27,7 +27,20 @@ const GuitarTabPage = ({
   return (
     <div className="guitar-tab">
       <div className="head-wrapper">
-        <Link to="/" className="back-link">返回</Link>
+        <div className="basic-info-wrapper">
+          <p className="info-option">
+            <span>Key:</span>
+            {noteNameTransfer(originKey)}
+          </p>
+          <p className="info-option">
+            <span>Play:</span>
+            {noteNameTransfer(play)}
+          </p>
+          <p className="info-option">
+            <span>Capo:</span>
+            {capo}
+          </p>
+        </div>
         <TonalitySelector
           tonality={tonality}
           setTonality={setTonality}

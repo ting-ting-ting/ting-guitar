@@ -23,11 +23,36 @@
       margin-bottom: 30px;
     }
 
-    .back-link {
-      color: #633919;
+    // .back-link {
+    //   color: #633919;
+
+    //   @media (max-width: 767px) {
+    //     display: none;
+    //   }
+    // }
+
+    .basic-info-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
 
       @media (max-width: 767px) {
-        display: none;
+        margin-bottom: 10px;
+        padding-left: 5px;
+      }
+
+      .info-option {
+        color: #803220;
+        margin-left: 10px;
+        font-weight: 600;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        span {
+          margin-right: 5px;
+        }
       }
     }
   }
