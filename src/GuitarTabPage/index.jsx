@@ -19,6 +19,9 @@ const GuitarTabPage = ({
   const {
     name,
     lines,
+    originKey,
+    play,
+    capo,
   } = tabData[id];
 
   return (

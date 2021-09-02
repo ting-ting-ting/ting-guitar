@@ -12,10 +12,17 @@ import {
   TYPE_MINOR,
   TYPE_MINOR_SEVEN,
 } from '../../type';
+import {
+  NOTE_NAME_C,
+  NOTE_NAME_D,
+} from '../../type';
 
 const angelTabData = {
   name: '天使',
   singer: '五月天',
+  originKey: NOTE_NAME_D,
+  play: NOTE_NAME_C,
+  capo: 2,
   lines: [
     {
       title: '前奏',
