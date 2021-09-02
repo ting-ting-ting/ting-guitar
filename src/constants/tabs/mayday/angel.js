@@ -15,7 +15,7 @@ import {
 import {
   NOTE_NAME_C,
   NOTE_NAME_D,
-} from '../../type';
+} from '../../noteName';
 
 const angelTabData = {
   name: '天使',
