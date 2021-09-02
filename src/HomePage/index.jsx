@@ -27,13 +27,13 @@ const HomePage = () => {
           </div>
         ))}
       </div>
-      <div className="nav-wrapper">
+      {/* <div className="nav-wrapper">
         <div className="nav-section">
           {Object.keys(tabsAfterGroup).map(singerId => (
             <a key={singerId} href={`#${singerId}`}>{tabsAfterGroup[singerId][0].singer}</a>
           ))}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
