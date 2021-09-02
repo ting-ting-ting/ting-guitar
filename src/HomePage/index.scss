@@ -1,27 +1,38 @@
 .home-page {
-  .tab-section {
-    padding: 40px;
-    background-color: #FFF;
-    border-radius: 5px;
-    margin-bottom: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 
-    .singer {
-      color: #633919,
-    }
+  .section-wrapper {
+    flex: 4;
+    .tab-section {
+      padding: 40px;
+      background-color: #FFF;
+      border-radius: 5px;
+      margin-bottom: 30px;
 
-    .links-wrapper {
-      margin-top: 25px;
+      .singer {
+        color: #633919,
+      }
 
-      .link-wrapper {
-        a {
-          color: #633919;
-          text-decoration: none;
+      .links-wrapper {
+        margin-top: 25px;
 
-          &:hover {
-            color: #803220;
+        .link-wrapper {
+          a {
+            color: #633919;
+            text-decoration: none;
+
+            &:hover {
+              color: #803220;
+            }
           }
         }
       }
     }
+  }
+
+  .nav-wrapper {
+    flex: 1;
   }
 }
