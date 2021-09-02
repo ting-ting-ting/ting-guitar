@@ -7,18 +7,18 @@ import { tablist, tabData } from '../constants/tabs';
 import './index.scss';
 
 const HomePage = () => {
-  const tabsAfterGroup = groupBy(tablist.map(id => tabData[id]), 'singer');
+  const tabsAfterGroup = groupBy(tablist.map(id => tabData[id]), 'singerId');
 
   console.log('tabs', tabsAfterGroup)
 
   return (
     <div className="home-page">
       <div className="section-wrapper">
-        {Object.keys(tabsAfterGroup).map(singer => (
-          <div className="tab-section">
-            <h3 className="singer">{singer}</h3>
+        {Object.keys(tabsAfterGroup).map(singerId => (
+          <div key={singerId} id={singerId} className="tab-section">
+            <h3 className="singer">{tabsAfterGroup[singerId][0].singer}</h3>
             <div className="links-wrapper">
-              {tabsAfterGroup[singer].map(tab => (
+              {tabsAfterGroup[singerId].map(tab => (
                 <div key={tab.id} className="link-wrapper">
                   <Link to={`/tab/${tab.id}`}>{tab.name}</Link>
                 </div>
@@ -28,7 +28,11 @@ const HomePage = () => {
         ))}
       </div>
       <div className="nav-wrapper">
-
+        <div className="nav-section">
+          {Object.keys(tabsAfterGroup).map(singerId => (
+            <a key={singerId} href={`#${singerId}`}>{tabsAfterGroup[singerId][0].singer}</a>
+          ))}
+        </div>
       </div>
     </div>
   );
