@@ -14,15 +14,15 @@ const HomePage = () => {
   return (
     <div className="home-page">
       {Object.keys(tabsAfterGroup).map(singer => (
-        <div>
-          <h3>{singer}</h3>
-          <ul>
+        <div className="tab-section">
+          <h3 className="singer">{singer}</h3>
+          <div className="links-wrapper">
             {tabsAfterGroup[singer].map(tab => (
-              <li key={tab.id}>
+              <div key={tab.id} className="link-wrapper">
                 <Link to={`/tab/${tab.id}`}>{tab.name}</Link>
-              </li>
+              </div>
             ))}
-          </ul>
+          </div>
         </div>
       ))}
     </div>
