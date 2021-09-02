@@ -27,6 +27,15 @@ const styles = StyleSheet.create({
     color: '#803220',
     fontWeight: '600',
   },
+  lyricsWrapper: {
+    marginTop: 15,
+  },
+  lyric: {
+    fontFamily: 'Noto Sans TC',
+    color: '#633919',
+    lineHeight: 24,
+    fontSize: 14,
+  },
 });
 
 Font.register({
@@ -45,11 +54,26 @@ const PdfDocument = ({
     <Document>
       <Page size="A4" style={styles.page}>
         <Text style={styles.title}>{name}</Text>
-        {lines.map(line => (
-          <View style={styles.line}>
+        {lines.map((line, idx) => (
+          <View key={idx} style={styles.line}>
             {!!line.title && (
               <View style={styles.lineTitleWrapper}>
                 <Text style={styles.lineTitle}>{line.title}</Text>
+              </View>
+            )}
+            {!!line.lyrics && (
+              <View style={styles.lyricsWrapper}>
+                {line.lyrics.map((l, idx) => {
+                  if (line.lyrics.length > 1) {
+                    return (
+                      <Text key={idx} style={styles.lyric}>{`${idx + 1}. ${l}`}</Text>
+                    );
+                  }
+
+                  return (
+                    <Text key={idx} style={styles.lyric}>{l}</Text>
+                  );
+                })}
               </View>
             )}
           </View>
