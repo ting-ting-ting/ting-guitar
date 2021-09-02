@@ -17,6 +17,11 @@ import {
   NOTE_NAME_D,
 } from '../../noteName';
 
+const c = {
+  number: NUMBER_ONE,
+  type: TYPE_MAJOR,
+};
+
 const angelTabData = {
   name: '天使',
   singer: '五月天',
@@ -29,10 +34,7 @@ const angelTabData = {
       title: '前奏',
       measures: [
         [
-          {
-            number: NUMBER_ONE,
-            type: TYPE_MAJOR,
-          },
+          c,
           null,
           {
             number: NUMBER_FIVE,
@@ -53,10 +55,7 @@ const angelTabData = {
           null,
         ],
         [
-          {
-            number: NUMBER_ONE,
-            type: TYPE_MAJOR,
-          },
+          c,
           null,
           {
             number: NUMBER_FIVE,
@@ -65,10 +64,7 @@ const angelTabData = {
           null,
         ],
         [
-          {
-            number: NUMBER_ONE,
-            type: TYPE_MAJOR,
-          },
+          c,
           null,
           null,
           null,
@@ -79,10 +75,7 @@ const angelTabData = {
       title: '主歌',
       measures: [
         [
-          {
-            number: NUMBER_ONE,
-            type: TYPE_MAJOR,
-          },
+          c,
           null,
           null,
           {
@@ -125,10 +118,7 @@ const angelTabData = {
     {
       measures: [
         [
-          {
-            number: NUMBER_ONE,
-            type: TYPE_MAJOR,
-          },
+          c,
           null,
           null,
           {
@@ -189,10 +179,7 @@ const angelTabData = {
             type: TYPE_MAJOR,
           },
           null,
-          {
-            number: NUMBER_ONE,
-            type: TYPE_MAJOR,
-          },
+          c,
           null,
         ],
       ],
@@ -225,10 +212,7 @@ const angelTabData = {
       title: '副歌',
       measures: [
         [
-          {
-            number: NUMBER_ONE,
-            type: TYPE_MAJOR,
-          },
+          c,
           null,
           {
             number: NUMBER_FIVE,
@@ -259,10 +243,7 @@ const angelTabData = {
             type: TYPE_MAJOR,
           },
           null,
-          {
-            number: NUMBER_ONE,
-            type: TYPE_MAJOR,
-          },
+          c,
           null,
         ],
         [
@@ -283,10 +264,7 @@ const angelTabData = {
     {
       measures: [
         [
-          {
-            number: NUMBER_ONE,
-            type: TYPE_MAJOR,
-          },
+          c,
           null,
           {
             number: NUMBER_FIVE,
@@ -317,10 +295,7 @@ const angelTabData = {
             type: TYPE_MAJOR,
           },
           null,
-          {
-            number: NUMBER_ONE,
-            type: TYPE_MAJOR,
-          },
+          c,
           null,
         ],
         [
@@ -342,10 +317,7 @@ const angelTabData = {
       title: '間奏1',
       measures: [
         [
-          {
-            number: NUMBER_ONE,
-            type: TYPE_MAJOR,
-          },
+          c,
           null,
           {
             number: NUMBER_FIVE,
@@ -366,10 +338,7 @@ const angelTabData = {
           null,
         ],
         [
-          {
-            number: NUMBER_ONE,
-            type: TYPE_MAJOR,
-          },
+          c,
           null,
           {
             number: NUMBER_FIVE,
@@ -378,10 +347,7 @@ const angelTabData = {
           null,
         ],
         [
-          {
-            number: NUMBER_ONE,
-            type: TYPE_MAJOR,
-          },
+          c,
           null,
           null,
           null,
@@ -402,10 +368,7 @@ const angelTabData = {
           null,
         ],
         [
-          {
-            number: NUMBER_ONE,
-            type: TYPE_MAJOR,
-          },
+          c,
           null,
           null,
           null,
@@ -467,10 +430,7 @@ const angelTabData = {
       title: '尾奏',
       measures: [
         [
-          {
-            number: NUMBER_ONE,
-            type: TYPE_MAJOR,
-          },
+          c,
           null,
           {
             number: NUMBER_FIVE,
@@ -491,10 +451,7 @@ const angelTabData = {
           null,
         ],
         [
-          {
-            number: NUMBER_ONE,
-            type: TYPE_MAJOR,
-          },
+          c,
           null,
           {
             number: NUMBER_FIVE,
@@ -503,10 +460,7 @@ const angelTabData = {
           null,
         ],
         [
-          {
-            number: NUMBER_ONE,
-            type: TYPE_MAJOR,
-          },
+          c,
           null,
           null,
           null,
