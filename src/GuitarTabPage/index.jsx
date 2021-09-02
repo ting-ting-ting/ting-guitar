@@ -42,7 +42,7 @@ const GuitarTabPage = ({
           ))}
         </div>
       </TonalityContext.Provider>
-      <PdfViewer />
+      <PdfViewer lines={lines} />
     </div>
   );
 };

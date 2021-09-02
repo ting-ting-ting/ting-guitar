@@ -2,10 +2,12 @@ import React from 'react';
 import { PDFViewer } from '@react-pdf/renderer';
 import PdfDocument from './PdfDocument';
 
-const PdfViewer = () => {
+const PdfViewer = ({
+  lines,
+}) => {
   return (
     <PDFViewer>
-      <PdfDocument />
+      <PdfDocument lines={lines} />
     </PDFViewer>
   );
 };

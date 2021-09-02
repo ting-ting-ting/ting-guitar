@@ -15,7 +15,11 @@ const styles = StyleSheet.create({
 });
 
 // Create Document Component
-const PdfDocument = () => {
+const PdfDocument = ({
+  lines,
+}) => {
+  console.log('lines', lines)
+
   return (
     <Document>
       <Page size="A4" style={styles.page}>
