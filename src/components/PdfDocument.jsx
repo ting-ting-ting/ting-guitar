@@ -4,17 +4,23 @@ import { Document, Page, Text, View, Font, StyleSheet } from '@react-pdf/rendere
 // Create styles
 const styles = StyleSheet.create({
   page: {
-    flexDirection: 'row',
-    backgroundColor: '#E4E4E4'
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+    backgroundColor: '#fff',
+    padding: '40px 15px',
   },
   title: {
-    fontFamily: 'ZCool',
+    fontSize: 32,
+    fontWeight: '600',
+    fontFamily: 'Noto Sans TC',
+    color: '#633919',
   },
 });
 
 Font.register({
-  family: 'ZCool',
-  src: 'https://fonts.gstatic.com/s/zcoolkuaile/v7/tssqApdaRQokwFjFJjvM6h2WpozzoXhC2g.ttf'
+  family: 'Noto Sans TC',
+  src: 'https://fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.otf',
 });
 
 // Create Document Component
