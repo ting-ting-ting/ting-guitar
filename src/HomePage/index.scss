@@ -34,5 +34,13 @@
 
   .nav-wrapper {
     flex: 1;
+
+    .nav-section {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding-left: 30px;
+    }
   }
 }
