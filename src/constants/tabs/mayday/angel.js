@@ -22,6 +22,16 @@ const c = {
   type: TYPE_MAJOR,
 };
 
+const dm7 = {
+  number: NUMBER_TWO,
+  type: TYPE_MINOR_SEVEN,
+};
+
+const em = {
+  number: NUMBER_THREE,
+  type: TYPE_MINOR,
+};
+
 const f = {
   number: NUMBER_FOUR,
   type: TYPE_MAJOR,
@@ -30,6 +40,17 @@ const f = {
 const g = {
   number: NUMBER_FIVE,
   type: TYPE_MAJOR,
+};
+
+const gonb = {
+  number: NUMBER_FIVE,
+  on: NUMBER_SEVEN,
+  type: TYPE_MAJOR,
+};
+
+const am = {
+  number: NUMBER_SIX,
+  type: TYPE_MINOR,
 };
 
 const angelTabData = {
@@ -50,10 +71,7 @@ const angelTabData = {
           null,
         ],
         [
-          {
-            number: NUMBER_SIX,
-            type: TYPE_MINOR,
-          },
+          am,
           null,
           f,
           null,
@@ -80,17 +98,12 @@ const angelTabData = {
           null,
           null,
           {
-            number: NUMBER_FIVE,
-            on: NUMBER_SEVEN,
-            type: TYPE_MAJOR,
+            ...gonb,
             capture: 3,
           },
         ],
         [
-          {
-            number: NUMBER_SIX,
-            type: TYPE_MINOR,
-          },
+          am,
           null,
           null,
           null,
@@ -117,17 +130,12 @@ const angelTabData = {
           null,
           null,
           {
-            number: NUMBER_FIVE,
-            on: NUMBER_SEVEN,
-            type: TYPE_MAJOR,
+            ...gonb,
             capture: 3,
           },
         ],
         [
-          {
-            number: NUMBER_SIX,
-            type: TYPE_MINOR,
-          },
+          am,
           null,
           null,
           null,
@@ -151,15 +159,9 @@ const angelTabData = {
       title: '導歌',
       measures: [
         [
-          {
-            number: NUMBER_SIX,
-            type: TYPE_MINOR,
-          },
+          am,
           null,
-          {
-            number: NUMBER_THREE,
-            type: TYPE_MINOR,
-          },
+          em,
           null,
         ],
         [
@@ -198,15 +200,9 @@ const angelTabData = {
           null,
         ],
         [
-          {
-            number: NUMBER_SIX,
-            type: TYPE_MINOR,
-          },
+          am,
           null,
-          {
-            number: NUMBER_THREE,
-            type: TYPE_MINOR,
-          },
+          em,
           null,
         ],
       ],
@@ -238,15 +234,9 @@ const angelTabData = {
           null,
         ],
         [
-          {
-            number: NUMBER_SIX,
-            type: TYPE_MINOR,
-          },
+          am,
           null,
-          {
-            number: NUMBER_THREE,
-            type: TYPE_MINOR,
-          },
+          em,
           null,
         ],
       ],
@@ -279,10 +269,7 @@ const angelTabData = {
           null,
         ],
         [
-          {
-            number: NUMBER_SIX,
-            type: TYPE_MINOR,
-          },
+          am,
           null,
           f,
           null,
@@ -318,10 +305,7 @@ const angelTabData = {
           null,
         ],
         [
-          {
-            number: NUMBER_TWO,
-            type: TYPE_MINOR_SEVEN,
-          },
+          dm7,
           null,
           null,
           null,
@@ -341,14 +325,9 @@ const angelTabData = {
         [
           f,
           g,
+          am,
           {
-            number: NUMBER_SIX,
-            type: TYPE_MINOR,
-          },
-          {
-            number: NUMBER_FIVE,
-            on: NUMBER_SEVEN,
-            type: TYPE_MAJOR,
+            ...gonb,
             capture: 2,
           },
         ],
@@ -365,10 +344,7 @@ const angelTabData = {
           null,
         ],
         [
-          {
-            number: NUMBER_SIX,
-            type: TYPE_MINOR,
-          },
+          am,
           null,
           f,
           null,
