@@ -3,11 +3,12 @@ import { PDFViewer } from '@react-pdf/renderer';
 import PdfDocument from './PdfDocument';
 
 const PdfViewer = ({
+  name,
   lines,
 }) => {
   return (
     <PDFViewer>
-      <PdfDocument lines={lines} />
+      <PdfDocument name={name} lines={lines} />
     </PDFViewer>
   );
 };

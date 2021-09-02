@@ -1,5 +1,5 @@
 import React from 'react';
-import { Document, Page, Text, View, StyleSheet } from '@react-pdf/renderer';
+import { Document, Page, Text, View, Font, StyleSheet } from '@react-pdf/renderer';
 
 // Create styles
 const styles = StyleSheet.create({
@@ -7,28 +7,27 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     backgroundColor: '#E4E4E4'
   },
-  section: {
-    margin: 10,
-    padding: 10,
-    flexGrow: 1
-  }
+  title: {
+    fontFamily: 'ZCool',
+  },
+});
+
+Font.register({
+  family: 'ZCool',
+  src: 'https://fonts.gstatic.com/s/zcoolkuaile/v7/tssqApdaRQokwFjFJjvM6h2WpozzoXhC2g.ttf'
 });
 
 // Create Document Component
 const PdfDocument = ({
+  name,
   lines,
 }) => {
-  console.log('lines', lines)
+  console.log('lines', lines, name);
 
   return (
     <Document>
       <Page size="A4" style={styles.page}>
-        <View style={styles.section}>
-          <Text>Section #1</Text>
-        </View>
-        <View style={styles.section}>
-          <Text>Section #2</Text>
-        </View>
+        <Text style={styles.title}>{name}</Text>
       </Page>
     </Document>
   );
