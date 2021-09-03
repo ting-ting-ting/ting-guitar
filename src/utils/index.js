@@ -39,8 +39,15 @@ import {
 import {
   TYPE_MAJOR,
   TYPE_MAJOR7,
+  TYPE_MAJOR9,
+  TYPE_MAJOR11,
+  TYPE_MAJOR13,
+  TYPE_MAJOR_ADD9,
+  TYPE_MAJOR_ADD11,
   TYPE_MINOR,
   TYPE_MINOR7,
+  TYPE_SUS2,
+  TYPE_SUS4,
 } from '../constants/type';
 
 export function numberTransfer({
@@ -470,11 +477,32 @@ export function typeTransfer(type) {
     case TYPE_MAJOR7:
       return 'maj7';
 
+    case TYPE_MAJOR9:
+      return 'maj9';
+
+    case TYPE_MAJOR11:
+      return 'maj11';
+
+    case TYPE_MAJOR13:
+      return 'maj13';
+
+    case TYPE_MAJOR_ADD9:
+      return 'add9';
+
+    case TYPE_MAJOR_ADD11:
+      return 'add11';
+
     case TYPE_MINOR:
       return 'm';
 
     case TYPE_MINOR7:
       return 'm7';
+
+    case TYPE_SUS2:
+      return 'sus2';
+
+    case TYPE_SUS4:
+      return 'sus4';
 
     default:
       return '';
