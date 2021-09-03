@@ -6,38 +6,41 @@ const ChordSample = ({
 
 }) => {
   return (
-    <div className="chord-sample">
-      <div className="fret">
-        <String />
-        <String />
-        <String />
-        <String />
-        <String />
-        <String />
-      </div>
-      <div className="fret">
-        <String />
-        <String />
-        <String />
-        <String />
-        <String />
-        <String />
-      </div>
-      <div className="fret">
-        <String />
-        <String />
-        <String />
-        <String />
-        <String />
-        <String />
-      </div>
-      <div className="fret">
-        <String />
-        <String />
-        <String />
-        <String />
-        <String />
-        <String />
+    <div className="chord-sample-wrapper">
+      <p className="chord-name">C</p>
+      <div className="chord-sample">
+        <div className="fret">
+          <String />
+          <String />
+          <String />
+          <String />
+          <String />
+          <String />
+        </div>
+        <div className="fret">
+          <String />
+          <String />
+          <String />
+          <String />
+          <String />
+          <String />
+        </div>
+        <div className="fret">
+          <String />
+          <String />
+          <String />
+          <String />
+          <String />
+          <String />
+        </div>
+        <div className="fret">
+          <String />
+          <String />
+          <String />
+          <String />
+          <String />
+          <String />
+        </div>
       </div>
     </div>
   );

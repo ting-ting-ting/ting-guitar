@@ -1,17 +1,27 @@
-.chord-sample {
+.chord-sample-wrapper {
   width: 76px;
-  border-top: 4px solid #633919;
 
-  .fret {
-    display: flex;
-    justify-content: space-between;
-    height: 20px;
-    border-bottom: 1px solid #633919;
+  .chord-name {
+    text-align: center;
+    color: #803220;
+    font-weight: 600;
+  }
 
-    .string {
-      width: 1px;
-      background-color: #633919;
-      align-self: stretch;
+  .chord-sample {
+    margin-top: 5px;
+    border-top: 4px solid #633919;
+
+    .fret {
+      display: flex;
+      justify-content: space-between;
+      height: 20px;
+      border-bottom: 1px solid #633919;
+
+      .string {
+        width: 1px;
+        background-color: #633919;
+        align-self: stretch;
+      }
     }
   }
 }
