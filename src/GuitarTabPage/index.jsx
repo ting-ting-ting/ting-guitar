@@ -66,7 +66,9 @@ const GuitarTabPage = ({
       </div>
       <div className="side-container">
         <VideoPlayer url={video} />
-        <ChordSample />
+        <div className="chord-sample-container">
+          <ChordSample />
+        </div>
       </div>
     </div>
   );
