@@ -20,6 +20,7 @@ const GuitarTabPage = ({
 
   const {
     name,
+    samples,
     lines,
     originKey,
     play,
@@ -69,7 +70,9 @@ const GuitarTabPage = ({
           <VideoPlayer url={video} />
         </div>
         <div className="chord-sample-container">
-          <ChordSample />
+          {samples.map(sample => (
+            <ChordSample key={sample.name} sample={sample} />
+          ))}
         </div>
       </div>
     </div>

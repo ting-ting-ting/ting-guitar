@@ -61,6 +61,70 @@ const angelTabData = {
   play: NOTE_NAME_C,
   capo: 2,
   video: 'https://www.youtube.com/watch?v=tSqNBEAZEV8',
+  samples: [{
+    name: 'C',
+    frets: [{
+      position: [2],
+    }, {
+      position: [4],
+    }, {
+      position: [5],
+    }],
+  }, {
+    name: 'C',
+    frets: [{
+      position: [2],
+    }, {
+      position: [4],
+    }, {
+      position: [5],
+    }],
+  }, {
+    name: 'C',
+    frets: [{
+      position: [2],
+    }, {
+      position: [4],
+    }, {
+      position: [5],
+    }],
+  }, {
+    name: 'C',
+    frets: [{
+      position: [2],
+    }, {
+      position: [4],
+    }, {
+      position: [5],
+    }],
+  }, {
+    name: 'C',
+    frets: [{
+      position: [2],
+    }, {
+      position: [4],
+    }, {
+      position: [5],
+    }],
+  }, {
+    name: 'C',
+    frets: [{
+      position: [2],
+    }, {
+      position: [4],
+    }, {
+      position: [5],
+    }],
+  }, {
+    name: 'C',
+    frets: [{
+      position: [2],
+    }, {
+      position: [4],
+    }, {
+      position: [5],
+    }],
+  }],
   lines: [
     {
       title: '前奏',
