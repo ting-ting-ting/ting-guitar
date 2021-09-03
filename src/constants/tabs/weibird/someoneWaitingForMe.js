@@ -11,10 +11,16 @@ import {
   TYPE_MAJOR,
   TYPE_MINOR,
   TYPE_MINOR7,
+  TYPE_MAJOR_ADD9,
 } from '../../type';
 import {
   NOTE_NAME_A,
 } from '../../noteName';
+
+const aAdd9 = {
+  number: NUMBER_ONE,
+  type: TYPE_MAJOR_ADD9,
+};
 
 const someoneWaitingForMeTabData = {
   name: '有人在等我',
@@ -24,9 +30,18 @@ const someoneWaitingForMeTabData = {
   play: NOTE_NAME_A,
   capo: 0,
   video: '',
-  samples: [
-
-  ],
+  samples: [{
+    name: 'Aadd9',
+    frets: [{
+      position: [],
+    }, {
+      position: [2],
+    }, {
+      position: [],
+    }, {
+      position: [3],
+    }],
+  }],
   lines: [
 
   ],
