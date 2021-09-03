@@ -10,7 +10,7 @@ import {
 import {
   TYPE_MAJOR,
   TYPE_MINOR,
-  TYPE_MINOR_SEVEN,
+  TYPE_MINOR7,
 } from '../../type';
 import {
   NOTE_NAME_A,

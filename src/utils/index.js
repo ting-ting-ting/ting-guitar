@@ -38,9 +38,9 @@ import {
 } from '../constants/noteName';
 import {
   TYPE_MAJOR,
-  TYPE_MAJOR_SEVEN,
+  TYPE_MAJOR7,
   TYPE_MINOR,
-  TYPE_MINOR_SEVEN,
+  TYPE_MINOR7,
 } from '../constants/type';
 
 export function numberTransfer({
@@ -467,13 +467,13 @@ export function typeTransfer(type) {
     case TYPE_MAJOR:
       return '';
 
-    case TYPE_MAJOR_SEVEN:
+    case TYPE_MAJOR7:
       return 'maj7';
 
     case TYPE_MINOR:
       return 'm';
 
-    case TYPE_MINOR_SEVEN:
+    case TYPE_MINOR7:
       return 'm7';
 
     default:

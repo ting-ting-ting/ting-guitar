@@ -10,7 +10,7 @@ import {
 import {
   TYPE_MAJOR,
   TYPE_MINOR,
-  TYPE_MINOR_SEVEN,
+  TYPE_MINOR7,
 } from '../../type';
 import {
   NOTE_NAME_C,
@@ -24,7 +24,7 @@ const c = {
 
 const dm7 = {
   number: NUMBER_TWO,
-  type: TYPE_MINOR_SEVEN,
+  type: TYPE_MINOR7,
 };
 
 const em = {
