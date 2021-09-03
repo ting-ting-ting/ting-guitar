@@ -71,58 +71,58 @@ const angelTabData = {
       position: [5],
     }],
   }, {
-    name: 'C',
+    name: 'Dm7',
     frets: [{
-      position: [2],
+      position: [1, 2],
     }, {
-      position: [4],
+      position: [3],
     }, {
-      position: [5],
+      position: [],
     }],
   }, {
-    name: 'C',
+    name: 'Em',
     frets: [{
-      position: [2],
+      position: [],
     }, {
-      position: [4],
+      position: [4, 5],
     }, {
-      position: [5],
+      position: [],
     }],
   }, {
-    name: 'C',
+    name: 'F',
     frets: [{
-      position: [2],
+      position: [1, 2, 3, 4, 5, 6],
     }, {
-      position: [4],
+      position: [3],
     }, {
-      position: [5],
+      position: [4,5],
     }],
   }, {
-    name: 'C',
+    name: 'G',
     frets: [{
-      position: [2],
-    }, {
-      position: [4],
+      position: [],
     }, {
       position: [5],
+    }, {
+      position: [1, 6],
     }],
   }, {
-    name: 'C',
+    name: 'G/B',
     frets: [{
-      position: [2],
-    }, {
-      position: [4],
+      position: [],
     }, {
       position: [5],
+    }, {
+      position: [2],
     }],
   }, {
-    name: 'C',
+    name: 'Am',
     frets: [{
       position: [2],
     }, {
-      position: [4],
+      position: [3,4],
     }, {
-      position: [5],
+      position: [],
     }],
   }],
   lines: [
