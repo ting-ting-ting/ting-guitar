@@ -92,11 +92,20 @@
     }
 
     .chord-sample-container {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
       flex-wrap: wrap;
       margin-top: 40px;
+
+      @media (max-width: 1199px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      }
+
+      @media (max-width: 767px) {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
     }
   }
 }
