@@ -65,7 +65,9 @@ const GuitarTabPage = ({
         {/* <PdfViewer name={name} lines={lines} /> */}
       </div>
       <div className="side-container">
-        <VideoPlayer url={video} />
+        <div className="video-container">
+          <VideoPlayer url={video} />
+        </div>
         <div className="chord-sample-container">
           <ChordSample />
         </div>
