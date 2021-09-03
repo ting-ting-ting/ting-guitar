@@ -18,9 +18,20 @@
       border-bottom: 1px solid #633919;
 
       .string {
+        position: relative;
         width: 1px;
         background-color: #633919;
         align-self: stretch;
+
+        .finger {
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background-color: #803220;
+          left: -4.5px;
+          top: 5px;
+        }
       }
     }
   }

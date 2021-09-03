@@ -5,14 +5,24 @@ import './index.scss';
 const ChordSample = ({
 
 }) => {
+  const sample = {
+    name: 'C',
+    frets: [{
+      position: [2],
+    }, {
+      position: [4],
+    }, {
+      position: [5],
+    }],
+  };
+
   return (
     <div className="chord-sample-wrapper">
-      <p className="chord-name">C</p>
+      <p className="chord-name">{sample.name}</p>
       <div className="chord-sample">
-        <Fret />
-        <Fret />
-        <Fret />
-        <Fret />
+        {sample.frets.map((fret, idx) => (
+          <Fret key={idx} fret={fret}  />
+        ))}
       </div>
     </div>
   );
