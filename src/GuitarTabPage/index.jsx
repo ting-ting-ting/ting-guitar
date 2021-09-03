@@ -28,39 +28,41 @@ const GuitarTabPage = ({
 
   return (
     <div className="guitar-tab">
-      <div className="head-wrapper">
-        <div className="basic-info-wrapper">
-          <p className="info-option">
-            <span>Key:</span>
-            {noteNameTransfer(originKey)}
-          </p>
-          <p className="info-option">
-            <span>Play:</span>
-            {noteNameTransfer(play)}
-          </p>
-          <p className="info-option">
-            <span>Capo:</span>
-            {capo}
-          </p>
+      <div className="tab-container">
+        <div className="head-wrapper">
+          <div className="basic-info-wrapper">
+            <p className="info-option">
+              <span>Key:</span>
+              {noteNameTransfer(originKey)}
+            </p>
+            <p className="info-option">
+              <span>Play:</span>
+              {noteNameTransfer(play)}
+            </p>
+            <p className="info-option">
+              <span>Capo:</span>
+              {capo}
+            </p>
+          </div>
+          <TonalitySelector
+            tonality={tonality}
+            setTonality={setTonality}
+          />
         </div>
-        <TonalitySelector
-          tonality={tonality}
-          setTonality={setTonality}
-        />
+        <TonalityContext.Provider
+          value={{
+            tonality,
+          }}
+        >
+          <div className="tab-content">
+            <h1>{name}</h1>
+            {lines.map((line, idx) => (
+              <Line key={idx} line={line} />
+            ))}
+          </div>
+        </TonalityContext.Provider>
+        {/* <PdfViewer name={name} lines={lines} /> */}
       </div>
-      <TonalityContext.Provider
-        value={{
-          tonality,
-        }}
-      >
-        <div className="tab-container">
-          <h1>{name}</h1>
-          {lines.map((line, idx) => (
-            <Line key={idx} line={line} />
-          ))}
-        </div>
-      </TonalityContext.Provider>
-      {/* <PdfViewer name={name} lines={lines} /> */}
       <div className="video-container">
         <VideoPlayer url={video} />
       </div>
