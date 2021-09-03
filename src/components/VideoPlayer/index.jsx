@@ -9,6 +9,7 @@ const VideoPlayer = ({
     <ReactPlayer
       className='react-player'
       url={url}
+      controls
       width="100%"
       height="100%"
     />

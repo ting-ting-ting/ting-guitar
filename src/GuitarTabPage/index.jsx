@@ -61,7 +61,9 @@ const GuitarTabPage = ({
         </div>
       </TonalityContext.Provider>
       {/* <PdfViewer name={name} lines={lines} /> */}
-      <VideoPlayer url={video} />
+      <div className="video-container">
+        <VideoPlayer url={video} />
+      </div>
     </div>
   );
 };
