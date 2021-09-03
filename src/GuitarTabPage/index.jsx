@@ -22,6 +22,7 @@ const GuitarTabPage = ({
     originKey,
     play,
     capo,
+    video,
   } = tabData[id];
 
   return (

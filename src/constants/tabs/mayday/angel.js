@@ -60,6 +60,7 @@ const angelTabData = {
   originKey: NOTE_NAME_D,
   play: NOTE_NAME_C,
   capo: 2,
+  video: 'https://www.youtube.com/watch?v=tSqNBEAZEV8',
   lines: [
     {
       title: '前奏',
