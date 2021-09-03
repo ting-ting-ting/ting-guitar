@@ -1,4 +1,5 @@
 import React from 'react';
+import String from './String';
 import './index.scss';
 
 const ChordSample = ({
@@ -6,7 +7,38 @@ const ChordSample = ({
 }) => {
   return (
     <div className="chord-sample">
-      ChordSample
+      <div className="fret">
+        <String />
+        <String />
+        <String />
+        <String />
+        <String />
+        <String />
+      </div>
+      <div className="fret">
+        <String />
+        <String />
+        <String />
+        <String />
+        <String />
+        <String />
+      </div>
+      <div className="fret">
+        <String />
+        <String />
+        <String />
+        <String />
+        <String />
+        <String />
+      </div>
+      <div className="fret">
+        <String />
+        <String />
+        <String />
+        <String />
+        <String />
+        <String />
+      </div>
     </div>
   );
 };

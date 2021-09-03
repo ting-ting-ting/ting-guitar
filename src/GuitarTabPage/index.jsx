@@ -6,6 +6,7 @@ import TonalitySelector from '../components/TonalitySelector';
 import Line from '../components/Line';
 import PdfViewer from '../components/PdfViewer';
 import VideoPlayer from '../components/VideoPlayer';
+import ChordSample from '../components/ChordSample';
 import './index.scss';
 
 const GuitarTabPage = ({
@@ -65,6 +66,7 @@ const GuitarTabPage = ({
       </div>
       <div className="side-container">
         <VideoPlayer url={video} />
+        <ChordSample />
       </div>
     </div>
   );

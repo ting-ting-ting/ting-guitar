@@ -1,0 +1,17 @@
+.chord-sample {
+  width: 76px;
+  border-top: 4px solid #633919;
+
+  .fret {
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+    border-bottom: 1px solid #633919;
+
+    .string {
+      width: 1px;
+      background-color: #633919;
+      align-self: stretch;
+    }
+  }
+}
