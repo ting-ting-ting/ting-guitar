@@ -23,6 +23,10 @@ const someoneWaitingForMeTabData = {
   originKey: NOTE_NAME_A,
   play: NOTE_NAME_A,
   capo: 0,
+  video: '',
+  samples: [
+
+  ],
   lines: [
 
   ],
