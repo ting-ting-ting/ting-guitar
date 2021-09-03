@@ -1,5 +1,6 @@
 import React from 'react';
 import Measure from '../Measure';
+import Lyrics from '../Lyrics';
 import './index.scss';
 
 const Line = ({
@@ -22,19 +23,7 @@ const Line = ({
         ))}
       </div>
       {!!lyrics && (
-        <div className="lyrics-wrapper">
-          {lyrics.map((l, idx) => {
-            if (lyrics.length > 1) {
-              return (
-                <p key={idx}>{`${idx + 1}. ${l}`}</p>
-              );
-            }
-
-            return (
-              <p key={idx}>{l}</p>
-            );
-          })}
-        </div>
+        <Lyrics lyrics={lyrics} />
       )}
     </div>
   );
