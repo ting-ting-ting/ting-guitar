@@ -5,6 +5,7 @@ import { TonalityContext } from '../context';
 import TonalitySelector from '../components/TonalitySelector';
 import Line from '../components/Line';
 import PdfViewer from '../components/PdfViewer';
+import VideoPlayer from '../components/VideoPlayer';
 import './index.scss';
 
 const GuitarTabPage = ({
@@ -60,6 +61,7 @@ const GuitarTabPage = ({
         </div>
       </TonalityContext.Provider>
       {/* <PdfViewer name={name} lines={lines} /> */}
+      <VideoPlayer url={video} />
     </div>
   );
 };
