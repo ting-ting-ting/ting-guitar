@@ -4,6 +4,7 @@ import './index.scss';
 
 const Fret = ({
   fret: {
+    start,
     position,
   },
 }) => {
@@ -15,6 +16,9 @@ const Fret = ({
       <String isActive={!!position.find(p => p === 3)} />
       <String isActive={!!position.find(p => p === 2)} />
       <String isActive={!!position.find(p => p === 1)} />
+      {!!start && (
+        <p className="start-point">{start}</p>
+      )}
     </div>
   );
 };
