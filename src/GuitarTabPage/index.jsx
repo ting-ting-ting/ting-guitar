@@ -66,14 +66,18 @@ const GuitarTabPage = ({
         {/* <PdfViewer name={name} lines={lines} /> */}
       </div>
       <div className="side-container">
-        <div className="video-container">
-          <VideoPlayer url={video} />
-        </div>
-        <div className="chord-sample-container">
-          {samples.map(sample => (
-            <ChordSample key={sample.name} sample={sample} />
-          ))}
-        </div>
+        {!!video && (
+          <div className="video-container">
+            <VideoPlayer url={video} />
+          </div>
+        )}
+        {samples.length > 0 && (
+          <div className="chord-sample-container">
+            {samples.map(sample => (
+              <ChordSample key={sample.name} sample={sample} />
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
