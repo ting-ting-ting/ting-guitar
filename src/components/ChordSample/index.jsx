@@ -1,5 +1,5 @@
 import React from 'react';
-import String from './String';
+import Fret from './Fret';
 import './index.scss';
 
 const ChordSample = ({
@@ -9,38 +9,10 @@ const ChordSample = ({
     <div className="chord-sample-wrapper">
       <p className="chord-name">C</p>
       <div className="chord-sample">
-        <div className="fret">
-          <String />
-          <String />
-          <String />
-          <String />
-          <String />
-          <String />
-        </div>
-        <div className="fret">
-          <String />
-          <String />
-          <String />
-          <String />
-          <String />
-          <String />
-        </div>
-        <div className="fret">
-          <String />
-          <String />
-          <String />
-          <String />
-          <String />
-          <String />
-        </div>
-        <div className="fret">
-          <String />
-          <String />
-          <String />
-          <String />
-          <String />
-          <String />
-        </div>
+        <Fret />
+        <Fret />
+        <Fret />
+        <Fret />
       </div>
     </div>
   );
