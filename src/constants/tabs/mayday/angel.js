@@ -63,6 +63,7 @@ const angelTabData = {
   video: 'https://www.youtube.com/watch?v=tSqNBEAZEV8',
   samples: [{
     name: 'C',
+    muted: [6],
     frets: [{
       position: [2],
     }, {
@@ -72,6 +73,8 @@ const angelTabData = {
     }],
   }, {
     name: 'Dm7',
+    muted: [5, 6],
+    opened: [4],
     frets: [{
       position: [1, 2],
     }, {
@@ -81,6 +84,7 @@ const angelTabData = {
     }],
   }, {
     name: 'Em',
+    opened: [1, 2, 3, 6],
     frets: [{
       position: [],
     }, {
@@ -99,6 +103,7 @@ const angelTabData = {
     }],
   }, {
     name: 'G',
+    opened: [2, 3, 4],
     frets: [{
       position: [],
     }, {
@@ -108,6 +113,8 @@ const angelTabData = {
     }],
   }, {
     name: 'G/B',
+    muted: [6],
+    opened: [1, 3, 4],
     frets: [{
       position: [],
     }, {
@@ -117,6 +124,8 @@ const angelTabData = {
     }],
   }, {
     name: 'Am',
+    muted: [6],
+    opened: [1],
     frets: [{
       position: [2],
     }, {
