@@ -56,6 +56,19 @@ const someoneWaitingForMeTabData = {
     }],
   }, {
     name: 'F#m7add11',
+    muted: [4],
+    opened: [1, 5],
+    frets: [{
+      position: [],
+    }, {
+      position: [2, 6],
+    }, {
+      position: [],
+    }, {
+      position: [3],
+    }],
+  }, {
+    name: 'F#m7add11*',
     opened: [1, 2, 5],
     frets: [{
       position: [],
@@ -85,6 +98,17 @@ const someoneWaitingForMeTabData = {
       position: [2, 3],
     }, {
       position: [],
+    }],
+  }, {
+    name: 'Bm7add11',
+    muted: [6],
+    opened: [1, 4],
+    frets: [{
+      position: [],
+    }, {
+      position: [3, 5],
+    }, {
+      position: [2],
     }],
   }],
   lines: [
