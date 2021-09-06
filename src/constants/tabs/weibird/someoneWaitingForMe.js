@@ -32,6 +32,7 @@ const someoneWaitingForMeTabData = {
   video: '',
   samples: [{
     name: 'Aadd9',
+    muted: [4, 6],
     frets: [{
       position: [],
     }, {

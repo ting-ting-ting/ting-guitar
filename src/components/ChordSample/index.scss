@@ -7,6 +7,17 @@
     font-weight: 600;
   }
 
+  .muted-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4px -4px 2px;
+
+    .muted-mark {
+      color: #633919;
+    }
+  }
+
   .chord-sample {
     margin-top: 5px;
     border-top: 4px solid #633919;
