@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ting-guitar/static/css/main.21530e75.chunk.css",
-    "main.js": "/ting-guitar/static/js/main.60ab93b5.chunk.js",
-    "main.js.map": "/ting-guitar/static/js/main.60ab93b5.chunk.js.map",
+    "main.js": "/ting-guitar/static/js/main.3434f326.chunk.js",
+    "main.js.map": "/ting-guitar/static/js/main.3434f326.chunk.js.map",
     "reactPlayerDailyMotion.js": "/ting-guitar/static/js/reactPlayerDailyMotion.6b0b5c36.chunk.js",
     "reactPlayerDailyMotion.js.map": "/ting-guitar/static/js/reactPlayerDailyMotion.6b0b5c36.chunk.js.map",
     "reactPlayerFacebook.js": "/ting-guitar/static/js/reactPlayerFacebook.0a9b00ac.chunk.js",
@@ -43,6 +43,6 @@
     "static/js/runtime-main.061a8965.js",
     "static/js/15.cd70854d.chunk.js",
     "static/css/main.21530e75.chunk.css",
-    "static/js/main.60ab93b5.chunk.js"
+    "static/js/main.3434f326.chunk.js"
   ]
 }
