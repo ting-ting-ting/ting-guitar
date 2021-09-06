@@ -1,5 +1,5 @@
 import React from 'react';
-import MutedMark from './MutedMark';
+import Mark from './Mark';
 import Fret from './Fret';
 import './index.scss';
 
@@ -7,19 +7,20 @@ const ChordSample = ({
   sample: {
     name,
     muted,
+    opened,
     frets,
   },
 }) => (
   <div className="chord-sample-wrapper">
     <p className="chord-name">{name}</p>
-    {!!muted && (
-      <div className="muted-wrapper">
-        <MutedMark isMuted={!!muted.find(m => m === 6)} />
-        <MutedMark isMuted={!!muted.find(m => m === 5)} />
-        <MutedMark isMuted={!!muted.find(m => m === 4)} />
-        <MutedMark isMuted={!!muted.find(m => m === 3)} />
-        <MutedMark isMuted={!!muted.find(m => m === 2)} />
-        <MutedMark isMuted={!!muted.find(m => m === 1)} />
+    {(!!muted || !!opened) && (
+      <div className="mark-wrapper">
+        <Mark isMuted={!!muted && !!muted.find(m => m === 6)} />
+        <Mark isMuted={!!muted && !!muted.find(m => m === 5)} />
+        <Mark isMuted={!!muted && !!muted.find(m => m === 4)} />
+        <Mark isMuted={!!muted && !!muted.find(m => m === 3)} />
+        <Mark isMuted={!!muted && !!muted.find(m => m === 2)} />
+        <Mark isMuted={!!muted && !!muted.find(m => m === 1)} />
       </div>
     )}
     <div className="chord-sample">

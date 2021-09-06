@@ -33,6 +33,7 @@ const someoneWaitingForMeTabData = {
   samples: [{
     name: 'Aadd9',
     muted: [4, 6],
+    opened: [5],
     frets: [{
       position: [],
     }, {
