@@ -64,6 +64,7 @@ const angelTabData = {
   samples: [{
     name: 'C',
     muted: [6],
+    opened: [1, 3],
     frets: [{
       position: [2],
     }, {
