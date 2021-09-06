@@ -126,7 +126,7 @@ const angelTabData = {
   }, {
     name: 'Am',
     muted: [6],
-    opened: [1],
+    opened: [1, 5],
     frets: [{
       position: [2],
     }, {
