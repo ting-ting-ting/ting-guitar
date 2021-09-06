@@ -64,6 +64,28 @@ const someoneWaitingForMeTabData = {
     }, {
       position: [],
     }],
+  }, {
+    name: 'Dsus2',
+    muted: [5, 6],
+    opened: [1, 4],
+    frets: [{
+      position: [],
+    }, {
+      position: [3],
+    }, {
+      position: [2],
+    }],
+  }, {
+    name: 'Dmaj9',
+    muted: [5, 6],
+    opened: [1, 4],
+    frets: [{
+      position: [],
+    }, {
+      position: [2, 3],
+    }, {
+      position: [],
+    }],
   }],
   lines: [
 
