@@ -46,6 +46,7 @@ import {
   TYPE_MAJOR_ADD11,
   TYPE_MINOR,
   TYPE_MINOR7,
+  TYPE_MINOR7_ADD11,
   TYPE_SUS2,
   TYPE_SUS4,
 } from '../constants/type';
@@ -497,6 +498,9 @@ export function typeTransfer(type) {
 
     case TYPE_MINOR7:
       return 'm7';
+
+    case TYPE_MINOR7_ADD11:
+      return 'm7add11';
 
     case TYPE_SUS2:
       return 'sus2';

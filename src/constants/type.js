@@ -10,6 +10,7 @@ export const TYPE_MAJOR_ADD11 = 'TYPE/TYPE_MAJOR_ADD11';
 // minor
 export const TYPE_MINOR = 'TYPE/TYPE_MINOR';
 export const TYPE_MINOR7 = 'TYPE/TYPE_MINOR7';
+export const TYPE_MINOR7_ADD11 = 'TYPE/TYPE_MINOR7_ADD11';
 
 // sus
 export const TYPE_SUS2 = 'TYPE/TYPE_SUS2';

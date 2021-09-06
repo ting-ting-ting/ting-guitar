@@ -9,9 +9,10 @@ import {
 } from '../../number';
 import {
   TYPE_MAJOR,
+  TYPE_MAJOR_ADD9,
   TYPE_MINOR,
   TYPE_MINOR7,
-  TYPE_MAJOR_ADD9,
+  TYPE_MINOR7_ADD11,
 } from '../../type';
 import {
   NOTE_NAME_A,
@@ -20,6 +21,11 @@ import {
 const aAdd9 = {
   number: NUMBER_ONE,
   type: TYPE_MAJOR_ADD9,
+};
+
+const fSharpM7Add11 = {
+  number: NUMBER_SIX,
+  type: TYPE_MINOR7_ADD11,
 };
 
 const someoneWaitingForMeTabData = {
@@ -55,7 +61,7 @@ const someoneWaitingForMeTabData = {
       position: [],
     }],
   }, {
-    name: 'F#m7add11',
+    name: '#Fm7add11',
     muted: [4],
     opened: [1, 5],
     frets: [{
@@ -68,7 +74,7 @@ const someoneWaitingForMeTabData = {
       position: [3],
     }],
   }, {
-    name: 'F#m7add11*',
+    name: '#Fm7add11*',
     opened: [1, 2, 5],
     frets: [{
       position: [],
@@ -112,7 +118,35 @@ const someoneWaitingForMeTabData = {
     }],
   }],
   lines: [
-
+    {
+      title: '前奏',
+      measures: [
+        [
+          aAdd9,
+          null,
+          null,
+          null,
+        ],
+        [
+          fSharpM7Add11,
+          null,
+          null,
+          null,
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+        ],
+      ],
+    },
   ],
 };
 
