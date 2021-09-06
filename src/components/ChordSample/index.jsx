@@ -15,12 +15,12 @@ const ChordSample = ({
     <p className="chord-name">{name}</p>
     {(!!muted || !!opened) && (
       <div className="mark-wrapper">
-        <Mark isMuted={!!muted && !!muted.find(m => m === 6)} />
-        <Mark isMuted={!!muted && !!muted.find(m => m === 5)} />
-        <Mark isMuted={!!muted && !!muted.find(m => m === 4)} />
-        <Mark isMuted={!!muted && !!muted.find(m => m === 3)} />
-        <Mark isMuted={!!muted && !!muted.find(m => m === 2)} />
-        <Mark isMuted={!!muted && !!muted.find(m => m === 1)} />
+        <Mark isMuted={!!muted && !!muted.find(m => m === 6)} isOpened={!!opened && !!opened.find(m => m === 6)} />
+        <Mark isMuted={!!muted && !!muted.find(m => m === 5)} isOpened={!!opened && !!opened.find(m => m === 5)} />
+        <Mark isMuted={!!muted && !!muted.find(m => m === 4)} isOpened={!!opened && !!opened.find(m => m === 4)} />
+        <Mark isMuted={!!muted && !!muted.find(m => m === 3)} isOpened={!!opened && !!opened.find(m => m === 3)} />
+        <Mark isMuted={!!muted && !!muted.find(m => m === 2)} isOpened={!!opened && !!opened.find(m => m === 2)} />
+        <Mark isMuted={!!muted && !!muted.find(m => m === 1)} isOpened={!!opened && !!opened.find(m => m === 1)} />
       </div>
     )}
     <div className="chord-sample">

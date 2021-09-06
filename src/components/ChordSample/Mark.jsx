@@ -3,15 +3,22 @@ import './index.scss';
 
 const Mark = ({
   isMuted,
+  isOpened,
 }) => {
-  if (!isMuted) {
+  if (isMuted) {
     return (
-      <span className="mark" />
+      <span className="mark">X</span>
+    );
+  }
+
+  if (isOpened) {
+    return (
+      <span className="mark">O</span>
     );
   }
 
   return (
-    <span className="mark">X</span>
+    <span className="mark" />
   );
 };
 
