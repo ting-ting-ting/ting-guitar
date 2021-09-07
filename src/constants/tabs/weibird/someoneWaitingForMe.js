@@ -39,7 +39,6 @@ const someoneWaitingForMeTabData = {
   samples: [{
     name: 'Aadd9',
     muted: [4, 6],
-    opened: [1, 5],
     frets: [{
       position: [],
     }, {
@@ -52,7 +51,6 @@ const someoneWaitingForMeTabData = {
   }, {
     name: 'Asus2',
     muted: [6],
-    opened: [1, 2, 5],
     frets: [{
       position: [],
     }, {
@@ -63,7 +61,6 @@ const someoneWaitingForMeTabData = {
   }, {
     name: '#Fm7add11',
     muted: [4],
-    opened: [1, 5],
     frets: [{
       position: [],
     }, {
@@ -75,7 +72,6 @@ const someoneWaitingForMeTabData = {
     }],
   }, {
     name: '#Fm7add11*',
-    opened: [1, 2, 5],
     frets: [{
       position: [],
     }, {
@@ -86,7 +82,6 @@ const someoneWaitingForMeTabData = {
   }, {
     name: 'Dsus2',
     muted: [5, 6],
-    opened: [1, 4],
     frets: [{
       position: [],
     }, {
@@ -97,7 +92,6 @@ const someoneWaitingForMeTabData = {
   }, {
     name: 'Dmaj9',
     muted: [5, 6],
-    opened: [1, 4],
     frets: [{
       position: [],
     }, {
@@ -108,7 +102,6 @@ const someoneWaitingForMeTabData = {
   }, {
     name: 'Bm7add11',
     muted: [6],
-    opened: [1, 4],
     frets: [{
       position: [],
     }, {
