@@ -73,9 +73,12 @@ const GuitarTabPage = ({
         )}
         {samples.length > 0 && (
           <div className="chord-sample-container">
-            {samples.map(sample => (
-              <ChordSample key={sample.name} sample={sample} />
-            ))}
+            <p className="hint">*僅列出預設調性的和弦表</p>
+            <div className="samples-content">
+              {samples.map(sample => (
+                <ChordSample key={sample.name} sample={sample} />
+              ))}
+            </div>
           </div>
         )}
       </div>

@@ -92,19 +92,29 @@
     }
 
     .chord-sample-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-column-gap: 20px;
-      grid-row-gap: 20px;
-      flex-wrap: wrap;
       margin-top: 45px;
 
-      @media (max-width: 1199px) {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      .hint {
+        font-size: 12px;
+        font-weight: 600;
+        color: #633919;
       }
 
-      @media (max-width: 767px) {
+      .samples-content {
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        flex-wrap: wrap;
+        margin-top: 5px;
+
+        @media (max-width: 1199px) {
+          grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+
+        @media (max-width: 767px) {
+          grid-template-columns: 1fr 1fr 1fr;
+        }
       }
     }
   }
