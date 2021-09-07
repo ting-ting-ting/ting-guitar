@@ -55,8 +55,6 @@ const am = {
 
 const angelTabData = {
   name: '天使',
-  singer: '五月天',
-  singerId: 'mayday',
   originKey: NOTE_NAME_D,
   play: NOTE_NAME_C,
   capo: 2,

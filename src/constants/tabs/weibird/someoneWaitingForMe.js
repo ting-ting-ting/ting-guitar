@@ -30,8 +30,6 @@ const fSharpM7Add11 = {
 
 const someoneWaitingForMeTabData = {
   name: '有人在等我',
-  singer: '韋禮安',
-  singerId: 'weibird',
   originKey: NOTE_NAME_A,
   play: NOTE_NAME_A,
   capo: 0,
