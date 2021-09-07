@@ -16,8 +16,6 @@ const GuitarTabPage = ({
     },
   },
 }) => {
-  const [tonality, setTonality] = useState(null);
-
   const {
     name,
     samples,
@@ -27,6 +25,8 @@ const GuitarTabPage = ({
     capo,
     video,
   } = tabData[id];
+
+  const [tonality, setTonality] = useState(play);
 
   return (
     <div className="guitar-tab">
