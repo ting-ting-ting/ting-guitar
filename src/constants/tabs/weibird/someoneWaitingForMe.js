@@ -28,7 +28,7 @@ const fSharpM7Add11 = {
   type: TYPE_MINOR7_ADD11,
 };
 
-const someoneWaitingForMeTabData = {
+const someoneWaitingForMe = {
   name: '有人在等我',
   originKey: NOTE_NAME_A,
   play: NOTE_NAME_A,
@@ -141,4 +141,4 @@ const someoneWaitingForMeTabData = {
   ],
 };
 
-export default someoneWaitingForMeTabData;
+export default someoneWaitingForMe;

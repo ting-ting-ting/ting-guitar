@@ -1,16 +1,16 @@
-import someoneWaitingForMeTabDataTabData from './someoneWaitingForMe';
+import someoneWaitingForMe from './someoneWaitingForMe';
 
 const singerInfoData = {
   singer: '韋禮安',
   singerId: 'weibird',
 };
 
-const weibirdTabData = {
+const weibird = {
   'weibird-1': {
     id: 'weibird-1',
     ...singerInfoData,
-    ...someoneWaitingForMeTabDataTabData,
+    ...someoneWaitingForMe,
   },
 }
 
-export default weibirdTabData;
+export default weibird;

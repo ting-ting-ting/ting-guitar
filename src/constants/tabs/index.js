@@ -1,13 +1,15 @@
-import maydayTabData from './mayday/index';
-import piaTabData from './pia/index';
-import weibirdTabData from './weibird/index';
-import yogaTabData from './yoga/index';
+import mayday from './mayday/index';
+import piaTab from './pia/index';
+import weibird from './weibird/index';
+import sodagreen from './sodagreen/index';
+import yoga from './yoga/index';
 
 export const tabData = {
-  ...maydayTabData,
-  ...piaTabData,
-  ...weibirdTabData,
-  ...yogaTabData,
+  ...mayday,
+  ...piaTab,
+  ...weibird,
+  ...sodagreen,
+  ...yoga,
 };
 
 export const tablist = Object.keys(tabData);

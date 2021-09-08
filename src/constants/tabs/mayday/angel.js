@@ -53,7 +53,7 @@ const am = {
   type: TYPE_MINOR,
 };
 
-const angelTabData = {
+const angel = {
   name: '天使',
   originKey: NOTE_NAME_D,
   play: NOTE_NAME_C,
@@ -433,4 +433,4 @@ const angelTabData = {
   ],
 };
 
-export default angelTabData;
+export default angel;

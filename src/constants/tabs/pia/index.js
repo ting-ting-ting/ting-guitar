@@ -1,5 +1,5 @@
-const piaTabData = {
+const pia = {
 
 };
 
-export default piaTabData;
+export default pia;

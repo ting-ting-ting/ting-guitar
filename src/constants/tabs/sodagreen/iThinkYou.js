@@ -15,13 +15,13 @@ import {
   TYPE_MINOR7_ADD11,
 } from '../../type';
 import {
-  NOTE_NAME_D,
+  NOTE_NAME_G,
 } from '../../noteName';
 
-const help = {
-  name: '成全',
-  originKey: NOTE_NAME_D,
-  play: NOTE_NAME_D,
+const iThinkYou = {
+  name: '我好想你',
+  originKey: NOTE_NAME_G,
+  play: NOTE_NAME_G,
   capo: 0,
   video: '',
   samples: [],
@@ -30,4 +30,4 @@ const help = {
   ],
 };
 
-export default help;
+export default iThinkYou;

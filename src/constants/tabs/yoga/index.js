@@ -1,16 +1,16 @@
-import helpTabData from './help';
+import help from './help';
 
 const singerInfoData = {
   singer: '林宥嘉',
   singerId: 'yoga',
 };
 
-const yogaTabData = {
+const yoga = {
   'yoga-1': {
     id: 'yoga-1',
     ...singerInfoData,
-    ...helpTabData,
+    ...help,
   },
 }
 
-export default yogaTabData;
+export default yoga;
