@@ -4,6 +4,7 @@ import piaTab from './pia/index';
 import weibird from './weibird/index';
 import sodagreen from './sodagreen/index';
 import yoga from './yoga/index';
+import movie from './movie/index';
 
 export const tabData = {
   ...self,
@@ -12,6 +13,7 @@ export const tabData = {
   ...weibird,
   ...sodagreen,
   ...yoga,
+  ...movie,
 };
 
 export const tablist = Object.keys(tabData);

@@ -1,5 +1,6 @@
 import angel from './angel';
 import matchesHeaven from './matchesHeaven';
+import how from './how';
 
 const singerInfoData = {
   singer: '自己的想法',
@@ -16,6 +17,11 @@ const self = {
     id: 'self-2',
     ...singerInfoData,
     ...matchesHeaven,
+  },
+  'self-3': {
+    id: 'self-3',
+    ...singerInfoData,
+    ...how,
   },
 }
 
