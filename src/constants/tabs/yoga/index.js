@@ -1,4 +1,5 @@
 import help from './help';
+import spoiledInnocence from './spoiledInnocence';
 
 const singerInfoData = {
   singer: '林宥嘉',
@@ -10,6 +11,11 @@ const yoga = {
     id: 'yoga-1',
     ...singerInfoData,
     ...help,
+  },
+  'yoga-2': {
+    id: 'yoga-2',
+    ...singerInfoData,
+    ...spoiledInnocence,
   },
 }
 
