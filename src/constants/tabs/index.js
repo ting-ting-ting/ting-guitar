@@ -7,6 +7,7 @@ import chirsxxx from './chirsxxx/index';
 import sodagreen from './sodagreen/index';
 import yoga from './yoga/index';
 import ronghao from './ronghao/index';
+import michaelwong from './michaelwong/index';
 import movie from './movie/index';
 
 export const tabData = {
@@ -19,6 +20,7 @@ export const tabData = {
   ...sodagreen,
   ...yoga,
   ...ronghao,
+  ...michaelwong,
   ...movie,
 };
 
