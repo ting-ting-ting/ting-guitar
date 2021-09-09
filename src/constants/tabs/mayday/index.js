@@ -1,4 +1,5 @@
 import angel from './angel';
+import bestDay from './bestDay';
 
 const singerInfoData = {
   singer: '五月天',
@@ -10,6 +11,11 @@ const mayday = {
     id: 'mayday-1',
     ...singerInfoData,
     ...angel,
+  },
+  'mayday-2': {
+    id: 'mayday-2',
+    ...singerInfoData,
+    ...bestDay,
   },
 }
 
