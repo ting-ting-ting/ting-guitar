@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/ting-guitar/static/css/main.6a656a28.chunk.css",
-    "main.js": "/ting-guitar/static/js/main.da1b4777.chunk.js",
-    "main.js.map": "/ting-guitar/static/js/main.da1b4777.chunk.js.map",
+    "main.css": "/ting-guitar/static/css/main.00b135ed.chunk.css",
+    "main.js": "/ting-guitar/static/js/main.92284931.chunk.js",
+    "main.js.map": "/ting-guitar/static/js/main.92284931.chunk.js.map",
     "reactPlayerDailyMotion.js": "/ting-guitar/static/js/reactPlayerDailyMotion.aed635d3.chunk.js",
     "reactPlayerDailyMotion.js.map": "/ting-guitar/static/js/reactPlayerDailyMotion.aed635d3.chunk.js.map",
     "reactPlayerFacebook.js": "/ting-guitar/static/js/reactPlayerFacebook.a0d0f63f.chunk.js",
@@ -36,13 +36,13 @@
     "static/js/16.39142ea2.chunk.js": "/ting-guitar/static/js/16.39142ea2.chunk.js",
     "static/js/16.39142ea2.chunk.js.map": "/ting-guitar/static/js/16.39142ea2.chunk.js.map",
     "index.html": "/ting-guitar/index.html",
-    "static/css/main.6a656a28.chunk.css.map": "/ting-guitar/static/css/main.6a656a28.chunk.css.map",
+    "static/css/main.00b135ed.chunk.css.map": "/ting-guitar/static/css/main.00b135ed.chunk.css.map",
     "static/js/15.4b86d6c9.chunk.js.LICENSE.txt": "/ting-guitar/static/js/15.4b86d6c9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c73de6d8.js",
     "static/js/15.4b86d6c9.chunk.js",
-    "static/css/main.6a656a28.chunk.css",
-    "static/js/main.da1b4777.chunk.js"
+    "static/css/main.00b135ed.chunk.css",
+    "static/js/main.92284931.chunk.js"
   ]
 }
