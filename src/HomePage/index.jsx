@@ -34,6 +34,7 @@ const HomePage = () => {
           ))}
         </div>
       </div>
+      <button type="button" className="top-btn">⬆</button>
     </div>
   );
 };
