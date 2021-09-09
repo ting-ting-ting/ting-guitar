@@ -3,6 +3,7 @@ import mayday from './mayday/index';
 import jj from './jj/index';
 import piaTab from './pia/index';
 import weibird from './weibird/index';
+import terrylin from './terrylin/index';
 import chirsxxx from './chirsxxx/index';
 import sodagreen from './sodagreen/index';
 import yoga from './yoga/index';
@@ -16,6 +17,7 @@ export const tabData = {
   ...jj,
   ...piaTab,
   ...weibird,
+  ...terrylin,
   ...chirsxxx,
   ...sodagreen,
   ...yoga,
