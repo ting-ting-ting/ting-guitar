@@ -34,7 +34,7 @@ const HomePage = () => {
           ))}
         </div>
       </div>
-      <button type="button" className="top-btn" onClick={scrollTop}>⬆</button>
+      <button type="button" className="top-btn" onClick={scrollTop}>Top</button>
     </div>
   );
 };
