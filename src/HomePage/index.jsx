@@ -9,7 +9,7 @@ import './index.scss';
 const HomePage = () => {
   const tabsAfterGroup = groupBy(tablist.map(id => tabData[id]), 'singerId');
 
-  console.log('tabs', tabsAfterGroup)
+  const scrollTop = () => window.scrollTo(0, 0);
 
   return (
     <div className="home-page">
@@ -34,7 +34,7 @@ const HomePage = () => {
           ))}
         </div>
       </div>
-      <button type="button" className="top-btn">⬆</button>
+      <button type="button" className="top-btn" onClick={scrollTop}>⬆</button>
     </div>
   );
 };
