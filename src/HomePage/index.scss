@@ -3,6 +3,10 @@
   justify-content: flex-start;
   align-items: flex-start;
 
+  @media (max-width: 767px) {
+    flex-direction: column-reverse;
+  }
+
   a {
     color: #633919;
     text-decoration: none;
@@ -15,6 +19,7 @@
 
   .section-wrapper {
     flex: 4;
+    align-self: stretch;
 
     .tab-section {
       border-top: 2px solid #633919;
@@ -44,6 +49,13 @@
   .nav-wrapper {
     flex: 1;
     align-self: stretch;
+    margin-left: 30px;
+
+    @media (max-width: 767px) {
+      flex: 1.5;
+      margin-left: 0;
+      margin-bottom: 30px;
+    }
 
     .nav-section {
       position: sticky;
@@ -52,7 +64,6 @@
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-start;
-      margin-left: 30px;
       padding: 12px 0;
       background-color: #FFF;
       border-radius: 5px;
