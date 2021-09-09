@@ -5,7 +5,9 @@
 
   .section-wrapper {
     flex: 4;
+
     .tab-section {
+      border-top: 2px solid #633919;
       padding: 40px;
       background-color: #FFF;
       border-radius: 5px;
@@ -19,6 +21,12 @@
         margin-top: 25px;
 
         .link-wrapper {
+          margin-top: 5px;
+
+          &:first-child {
+            margin-top: 0;
+          }
+
           a {
             color: #633919;
             text-decoration: none;
@@ -44,7 +52,10 @@
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-start;
-      padding-left: 30px;
+      padding: 15px;
+      margin-left: 30px;
+      background-color: #FFF;
+      border-radius: 5px;
     }
   }
 }
