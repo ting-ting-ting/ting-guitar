@@ -29,11 +29,12 @@
       margin-bottom: 30px;
 
       .singer {
-        color: #633919,
+        color: #633919;
+        font-size: 20px;
       }
 
       .links-wrapper {
-        margin-top: 25px;
+        margin-top: 20px;
 
         .link-wrapper {
           margin-top: 5px;
@@ -59,7 +60,7 @@
 
     .nav-section {
       position: sticky;
-      top: 100px;
+      top: 50px;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
