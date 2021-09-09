@@ -1,5 +1,6 @@
 import kingOfComedy from './kingOfComedy';
 import whiteLi from './whiteLi';
+import notMatch from './notMatch';
 
 const singerInfoData = {
   singer: '李榮浩',
@@ -16,6 +17,11 @@ const ronghao = {
     id: 'ronghao-2',
     ...singerInfoData,
     ...whiteLi,
+  },
+  'ronghao-3': {
+    id: 'ronghao-3',
+    ...singerInfoData,
+    ...notMatch,
   },
 }
 
