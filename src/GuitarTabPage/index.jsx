@@ -31,7 +31,7 @@ const GuitarTabPage = ({
 
   return (
     <>
-      <DefaultMeta />
+      <DefaultMeta title={`${name} 吉他譜 -- Ting Guitar`} description={`最優質、精準的${name}吉他譜。`} />
       <div className="guitar-tab">
         <div className="tab-container">
           <div className="head-wrapper">
