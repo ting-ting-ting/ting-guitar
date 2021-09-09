@@ -1,6 +1,7 @@
 import self from './self/index';
 import mayday from './mayday/index';
 import jj from './jj/index';
+import katncandix2 from './katncandix2/index';
 import piaTab from './pia/index';
 import weibird from './weibird/index';
 import terrylin from './terrylin/index';
@@ -15,6 +16,7 @@ export const tabData = {
   ...self,
   ...mayday,
   ...jj,
+  ...katncandix2,
   ...piaTab,
   ...weibird,
   ...terrylin,
