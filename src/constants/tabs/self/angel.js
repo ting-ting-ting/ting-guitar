@@ -22,12 +22,6 @@ const c = {
   type: TYPE_MAJOR,
 };
 
-const d = {
-  number: NUMBER_ONE,
-  type: TYPE_MAJOR,
-  shift: 2,
-}
-
 const dm7 = {
   number: NUMBER_TWO,
   type: TYPE_MINOR7,
@@ -138,7 +132,7 @@ const angel = {
       title: '前奏',
       measures: [
         [
-          d,
+          c,
           null,
           g,
           null,
