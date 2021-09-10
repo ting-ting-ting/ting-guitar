@@ -623,8 +623,33 @@ export function numberTransfer({
       }
     }
 
-    case NUMBER_ONE_SHARP:
-      return '#1';
+    case NUMBER_ONE_SHARP: {
+      switch (tonality) {
+        case NOTE_NAME_C:
+          return '#C';
+
+        case NOTE_NAME_D:
+          return '#D';
+
+        case NOTE_NAME_E:
+          return 'F';
+
+        case NOTE_NAME_F:
+          return '#F';
+
+        case NOTE_NAME_G:
+          return '#G';
+
+        case NOTE_NAME_A:
+          return '#A';
+
+        case NOTE_NAME_B:
+          return 'C';
+
+        default:
+          return '#1';
+      }
+    }
 
     case NUMBER_TWO_FLAT: {
       switch (tonality) {
