@@ -28,6 +28,10 @@
       border-radius: 5px;
       margin-bottom: 30px;
 
+      @media (max-width: 767px) {
+        padding: 20px;
+      }
+
       .singer {
         color: #633919;
         font-size: 20px;
@@ -37,7 +41,7 @@
         margin-top: 20px;
 
         .link-wrapper {
-          margin-top: 5px;
+          margin-top: 8px;
 
           &:first-child {
             margin-top: 0;
@@ -76,6 +80,10 @@
         display: inline-block;
         align-self: stretch;
         padding: 5px 15px;
+
+        @media (max-width: 767px) {
+          padding: 5px 20px;
+        }
 
         &:hover {
           border-left: 4px solid #803220;

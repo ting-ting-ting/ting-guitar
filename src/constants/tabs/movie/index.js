@@ -1,4 +1,5 @@
 import startOfSomethingNew from './startOfSomethingNew';
+import southOfCountry from './southOfCountry';
 
 const singerInfoData = {
   singer: '電影主題曲',
@@ -10,6 +11,11 @@ const movie = {
     id: 'movie-1',
     ...singerInfoData,
     ...startOfSomethingNew,
+  },
+  'movie-2': {
+    id: 'movie-2',
+    ...singerInfoData,
+    ...southOfCountry,
   },
 }
 
