@@ -903,8 +903,33 @@ export function numberTransfer({
       }
     }
 
-    case NUMBER_FIVE_SHARP:
-      return '#5';
+    case NUMBER_FIVE_SHARP: {
+      switch (tonality) {
+        case NOTE_NAME_C:
+          return '#G';
+
+        case NOTE_NAME_D:
+          return '#A';
+
+        case NOTE_NAME_E:
+          return 'C';
+
+        case NOTE_NAME_F:
+          return '#C';
+
+        case NOTE_NAME_G:
+          return '#D';
+
+        case NOTE_NAME_A:
+          return 'F';
+
+        case NOTE_NAME_B:
+          return 'G';
+
+        default:
+          return 'b6';
+      }
+    }
 
     case NUMBER_SIX_FLAT: {
       switch (tonality) {
