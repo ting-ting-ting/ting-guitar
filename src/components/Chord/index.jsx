@@ -27,12 +27,14 @@ const Chord = ({
     shift,
   } = chord;
 
+  const usedTonality = isNumber(shift) && shift !== 0 ?  shiftNoteName({ note: tonality, shift }) : tonality;
+
   const getChordName = () => {
     if (!!on) {
-      return `${numberTransfer({ number, tonality })}${typeTransfer(type)}/${numberTransfer({ number: on, tonality })}`;
+      return `${numberTransfer({ number, tonality: usedTonality })}${typeTransfer(type)}/${numberTransfer({ number: on, tonality: usedTonality })}`;
     }
 
-    return `${numberTransfer({ number, tonality })}${typeTransfer(type)}`;
+    return `${numberTransfer({ number, tonality: usedTonality })}${typeTransfer(type)}`;
   }
 
   if (capture === 2) {
