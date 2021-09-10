@@ -1180,8 +1180,20 @@ export function numberTransfer({
         case NOTE_NAME_C:
           return 'G';
 
+        case NOTE_NAME_C_SHARP:
+          return '#G';
+
+        case NOTE_NAME_D_FLAT:
+          return 'bA';
+
         case NOTE_NAME_D:
           return 'A';
+
+        case NOTE_NAME_D_SHARP:
+          return '#A';
+
+        case NOTE_NAME_E_FLAT:
+          return 'bB';
 
         case NOTE_NAME_E:
           return 'B';
@@ -1189,44 +1201,32 @@ export function numberTransfer({
         case NOTE_NAME_F:
           return 'C';
 
+        case NOTE_NAME_F_SHARP:
+          return '#C';
+
+        case NOTE_NAME_G_FLAT:
+          return 'bD';
+
         case NOTE_NAME_G:
           return 'D';
+
+        case NOTE_NAME_G_SHARP:
+          return '#D';
+
+        case NOTE_NAME_A_FLAT:
+          return 'bE';
 
         case NOTE_NAME_A:
           return 'E';
 
-        case NOTE_NAME_B:
-          return '#F';
-
-        case NOTE_NAME_C_SHARP:
-          return '';
-
-        case NOTE_NAME_D_FLAT:
-          return '';
-
-        case NOTE_NAME_D_SHARP:
-          return '';
-
-        case NOTE_NAME_E_FLAT:
-          return '';
-
-        case NOTE_NAME_F_SHARP:
-          return '';
-
-        case NOTE_NAME_G_FLAT:
-          return '';
-
-        case NOTE_NAME_G_SHARP:
-          return '';
-
-        case NOTE_NAME_A_FLAT:
-          return '';
-
         case NOTE_NAME_A_SHARP:
-          return '';
+          return 'F';
 
         case NOTE_NAME_B_FLAT:
-          return '';
+          return 'F';
+
+        case NOTE_NAME_B:
+          return '#F';
 
         default:
           return '5';
@@ -1287,7 +1287,7 @@ export function numberTransfer({
           return '';
 
         default:
-          return 'b6';
+          return '#5';
       }
     }
 
