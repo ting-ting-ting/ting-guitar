@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import {
-  shiftNumberTransfer,
+  shiftNumber,
   numberTransfer,
   typeTransfer,
 } from '../../utils';
@@ -27,8 +27,8 @@ const Chord = ({
     shift,
   } = chord;
 
-  const usedNumber = isNumber(shift) && shift !== 0 ? shiftNumberTransfer({ number, shift }) : number;
-  const usedOn = isNumber(shift) && shift !== 0 ? shiftNumberTransfer({ number: on, shift }) : on;
+  const usedNumber = isNumber(shift) && shift !== 0 ? shiftNumber({ number, shift }) : number;
+  const usedOn = isNumber(shift) && shift !== 0 ? shiftNumber({ number: on, shift }) : on;
 
   const getChordName = () => {
     if (!!on) {

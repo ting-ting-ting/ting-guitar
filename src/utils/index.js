@@ -82,7 +82,7 @@ const flatNumberArray = [
   NUMBER_SEVEN,
 ];
 
-export function shiftNumberTransfer({
+export function shiftNumber({
   number,
   shift,
 }) {
