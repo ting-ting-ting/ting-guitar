@@ -336,10 +336,7 @@ export function shiftNoteName({
     }
 
     default: {
-      sharpArray = sharpNoteNameArray;
-      flatArray = flatNoteNameArray;
-
-      break;
+      return note;
     }
   }
 
@@ -578,10 +575,7 @@ export function shiftNumber({
     }
 
     default: {
-      sharpArray = sharpNumberArray;
-      flatArray = flatNumberArray;
-
-      break;
+      return number;
     }
   }
 
