@@ -22,6 +22,12 @@ const c = {
   type: TYPE_MAJOR,
 };
 
+const d = {
+  number: NUMBER_ONE,
+  type: TYPE_MAJOR,
+  currentTonality: NUMBER_TWO,
+}
+
 const dm7 = {
   number: NUMBER_TWO,
   type: TYPE_MINOR7,
@@ -132,7 +138,7 @@ const angel = {
       title: '前奏',
       measures: [
         [
-          c,
+          d,
           null,
           g,
           null,

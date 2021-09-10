@@ -22,14 +22,19 @@ const Chord = ({
     on,
     type,
     capture,
+    currentTonality,
   } = chord;
+
+  const usedTonality = !!currentTonality ? numberTransfer({ number: currentTonality, tonality }) : tonality;
+
+  console.log('usedTonality', usedTonality)
 
   const getChordName = () => {
     if (!!on) {
-      return `${numberTransfer({ number, tonality })}${typeTransfer(type)}/${numberTransfer({ number: on, tonality })}`;
+      return `${numberTransfer({ number, tonality: usedTonality })}${typeTransfer(type)}/${numberTransfer({ number: on, tonality: usedTonality })}`;
     }
 
-    return `${numberTransfer({ number, tonality })}${typeTransfer(type)}`;
+    return `${numberTransfer({ number, tonality: usedTonality })}${typeTransfer(type)}`;
   }
 
   if (capture === 2) {

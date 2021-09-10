@@ -51,6 +51,367 @@ import {
   TYPE_SUS4,
 } from '../constants/type';
 
+export function shiftNumberTransfer({
+  number,
+  shift,
+}) {
+  switch (number) {
+    case NUMBER_ONE: {
+      switch (shift) {
+        case NOTE_NAME_C:
+          return 'C';
+
+        case NOTE_NAME_D:
+          return 'D';
+
+        case NOTE_NAME_E:
+          return 'E';
+
+        case NOTE_NAME_F:
+          return 'F';
+
+        case NOTE_NAME_G:
+          return 'G';
+
+        case NOTE_NAME_A:
+          return 'A';
+
+        case NOTE_NAME_B:
+          return 'B';
+
+        default:
+          return '1';
+      }
+    }
+
+    case NUMBER_ONE_SHARP:
+      return '#1';
+
+    case NUMBER_TWO_FLAT: {
+      switch (shift) {
+        case NOTE_NAME_C:
+          return 'bD';
+
+        case NOTE_NAME_D:
+          return 'bE';
+
+        case NOTE_NAME_E:
+          return 'F';
+
+        case NOTE_NAME_F:
+          return 'bG';
+
+        case NOTE_NAME_G:
+          return 'bA';
+
+        case NOTE_NAME_A:
+          return 'bB';
+
+        case NOTE_NAME_B:
+          return 'C';
+
+        default:
+          return 'b2';
+      }
+    }
+
+    case NUMBER_TWO: {
+      switch (shift) {
+        case NOTE_NAME_C:
+          return 'D';
+
+        case NOTE_NAME_D:
+          return 'E';
+
+        case NOTE_NAME_E:
+          return '#F';
+
+        case NOTE_NAME_F:
+          return 'G';
+
+        case NOTE_NAME_G:
+          return 'A';
+
+        case NOTE_NAME_A:
+          return 'B';
+
+        case NOTE_NAME_B:
+          return '#C';
+
+        default:
+          return '2';
+      }
+    }
+
+    case NUMBER_TWO_SHARP:
+      return '#2';
+
+    case NUMBER_THREE_FLAT: {
+      switch (shift) {
+        case NOTE_NAME_C:
+          return 'bE';
+
+        case NOTE_NAME_D:
+          return 'F';
+
+        case NOTE_NAME_E:
+          return 'G';
+
+        case NOTE_NAME_F:
+          return 'bA';
+
+        case NOTE_NAME_G:
+          return 'bB';
+
+        case NOTE_NAME_A:
+          return 'C';
+
+        case NOTE_NAME_B:
+          return 'D';
+
+        default:
+          return 'b3';
+      }
+    }
+
+    case NUMBER_THREE: {
+      switch (shift) {
+        case NOTE_NAME_C:
+          return 'E';
+
+        case NOTE_NAME_D:
+          return '#F';
+
+        case NOTE_NAME_E:
+          return '#G';
+
+        case NOTE_NAME_F:
+          return 'A';
+
+        case NOTE_NAME_G:
+          return 'B';
+
+        case NOTE_NAME_A:
+          return '#C';
+
+        case NOTE_NAME_B:
+          return '#D';
+
+        default:
+          return '3';
+      }
+    }
+
+    case NUMBER_FOUR: {
+      switch (shift) {
+        case NOTE_NAME_C:
+          return 'F';
+
+        case NOTE_NAME_D:
+          return 'G';
+
+        case NOTE_NAME_E:
+          return 'A';
+
+        case NOTE_NAME_F:
+          return 'bB';
+
+        case NOTE_NAME_G:
+          return 'C';
+
+        case NOTE_NAME_A:
+          return 'D';
+
+        case NOTE_NAME_B:
+          return 'E';
+
+        default:
+          return '4';
+      }
+    }
+
+    case NUMBER_FOUR_SHARP:
+      return '#4';
+
+    case NUMBER_FIVE_FLAT: {
+      switch (shift) {
+        case NOTE_NAME_C:
+          return 'bG';
+
+        case NOTE_NAME_D:
+          return 'bA';
+
+        case NOTE_NAME_E:
+          return 'bB';
+
+        case NOTE_NAME_F:
+          return 'B';
+
+        case NOTE_NAME_G:
+          return 'bD';
+
+        case NOTE_NAME_A:
+          return 'bE';
+
+        case NOTE_NAME_B:
+          return 'F';
+
+        default:
+          return 'b5';
+      }
+    }
+
+    case NUMBER_FIVE: {
+      switch (shift) {
+        case NOTE_NAME_C:
+          return 'G';
+
+        case NOTE_NAME_D:
+          return 'A';
+
+        case NOTE_NAME_E:
+          return 'B';
+
+        case NOTE_NAME_F:
+          return 'C';
+
+        case NOTE_NAME_G:
+          return 'D';
+
+        case NOTE_NAME_A:
+          return 'E';
+
+        case NOTE_NAME_B:
+          return '#F';
+
+        default:
+          return '5';
+      }
+    }
+
+    case NUMBER_FIVE_SHARP:
+      return '#5';
+
+    case NUMBER_SIX_FLAT: {
+      switch (shift) {
+        case NOTE_NAME_C:
+          return 'bA';
+
+        case NOTE_NAME_D:
+          return 'bB';
+
+        case NOTE_NAME_E:
+          return 'C';
+
+        case NOTE_NAME_F:
+          return 'bD';
+
+        case NOTE_NAME_G:
+          return 'bE';
+
+        case NOTE_NAME_A:
+          return 'F';
+
+        case NOTE_NAME_B:
+          return 'G';
+
+        default:
+          return 'b6';
+      }
+    }
+
+    case NUMBER_SIX: {
+      switch (shift) {
+        case NOTE_NAME_C:
+          return 'A';
+
+        case NOTE_NAME_D:
+          return 'B';
+
+        case NOTE_NAME_E:
+          return '#C';
+
+        case NOTE_NAME_F:
+          return 'D';
+
+        case NOTE_NAME_G:
+          return 'E';
+
+        case NOTE_NAME_A:
+          return '#F';
+
+        case NOTE_NAME_B:
+          return '#G';
+
+        default:
+          return '6';
+      }
+    }
+
+    case NUMBER_SIX_SHARP:
+      return '#6';
+
+    case NUMBER_SEVEN_FLAT: {
+      switch (shift) {
+        case NOTE_NAME_C:
+          return 'bB';
+
+        case NOTE_NAME_D:
+          return 'C';
+
+        case NOTE_NAME_E:
+          return 'D';
+
+        case NOTE_NAME_F:
+          return 'bE';
+
+        case NOTE_NAME_G:
+          return 'F';
+
+        case NOTE_NAME_A:
+          return 'G';
+
+        case NOTE_NAME_B:
+          return 'A';
+
+        default:
+          return 'b7';
+      }
+    }
+
+    case NUMBER_SEVEN: {
+      switch (shift) {
+        case NOTE_NAME_C:
+          return 'B';
+
+        case NOTE_NAME_D:
+          return '#C';
+
+        case NOTE_NAME_E:
+          return '#D';
+
+        case NOTE_NAME_F:
+          return 'E';
+
+        case NOTE_NAME_G:
+          return '#F';
+
+        case NOTE_NAME_A:
+          return '#G';
+
+        case NOTE_NAME_B:
+          return '#A';
+
+        default:
+          return '7';
+      }
+    }
+
+    default:
+      return '';
+  }
+}
+
 export function numberTransfer({
   number,
   tonality,
