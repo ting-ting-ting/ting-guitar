@@ -111,327 +111,206 @@ export function shiftNumberTransfer({
     }
 
     case NUMBER_TWO_FLAT: {
-      switch (shift) {
-        case NOTE_NAME_C:
-          return 'bD';
+      sharpArray = [
+        ...sharpNumberArray.slice(1),
+        ...sharpNumberArray.slice(0, 1),
+      ];
+      flatArray = [
+        ...flatNumberArray.slice(1),
+        ...flatNumberArray.slice(0, 1),
+      ];
 
-        case NOTE_NAME_D:
-          return 'bE';
-
-        case NOTE_NAME_E:
-          return 'F';
-
-        case NOTE_NAME_F:
-          return 'bG';
-
-        case NOTE_NAME_G:
-          return 'bA';
-
-        case NOTE_NAME_A:
-          return 'bB';
-
-        case NOTE_NAME_B:
-          return 'C';
-
-        default:
-          return 'b2';
-      }
+      break;
     }
 
     case NUMBER_TWO: {
-      switch (shift) {
-        case NOTE_NAME_C:
-          return 'D';
+      sharpArray = [
+        ...sharpNumberArray.slice(2),
+        ...sharpNumberArray.slice(0, 2),
+      ];
+      flatArray = [
+        ...flatNumberArray.slice(2),
+        ...flatNumberArray.slice(0, 2),
+      ];
 
-        case NOTE_NAME_D:
-          return 'E';
-
-        case NOTE_NAME_E:
-          return '#F';
-
-        case NOTE_NAME_F:
-          return 'G';
-
-        case NOTE_NAME_G:
-          return 'A';
-
-        case NOTE_NAME_A:
-          return 'B';
-
-        case NOTE_NAME_B:
-          return '#C';
-
-        default:
-          return '2';
-      }
+      break;
     }
 
-    case NUMBER_TWO_SHARP:
-      return '#2';
+    case NUMBER_TWO_SHARP: {
+      sharpArray = [
+        ...sharpNumberArray.slice(3),
+        ...sharpNumberArray.slice(0, 3),
+      ];
+      flatArray = [
+        ...flatNumberArray.slice(3),
+        ...flatNumberArray.slice(0, 3),
+      ];
+
+      break;
+    }
 
     case NUMBER_THREE_FLAT: {
-      switch (shift) {
-        case NOTE_NAME_C:
-          return 'bE';
+      sharpArray = [
+        ...sharpNumberArray.slice(3),
+        ...sharpNumberArray.slice(0, 3),
+      ];
+      flatArray = [
+        ...flatNumberArray.slice(3),
+        ...flatNumberArray.slice(0, 3),
+      ];
 
-        case NOTE_NAME_D:
-          return 'F';
-
-        case NOTE_NAME_E:
-          return 'G';
-
-        case NOTE_NAME_F:
-          return 'bA';
-
-        case NOTE_NAME_G:
-          return 'bB';
-
-        case NOTE_NAME_A:
-          return 'C';
-
-        case NOTE_NAME_B:
-          return 'D';
-
-        default:
-          return 'b3';
-      }
+      break;
     }
 
     case NUMBER_THREE: {
-      switch (shift) {
-        case NOTE_NAME_C:
-          return 'E';
+      sharpArray = [
+        ...sharpNumberArray.slice(4),
+        ...sharpNumberArray.slice(0, 4),
+      ];
+      flatArray = [
+        ...flatNumberArray.slice(4),
+        ...flatNumberArray.slice(0, 4),
+      ];
 
-        case NOTE_NAME_D:
-          return '#F';
-
-        case NOTE_NAME_E:
-          return '#G';
-
-        case NOTE_NAME_F:
-          return 'A';
-
-        case NOTE_NAME_G:
-          return 'B';
-
-        case NOTE_NAME_A:
-          return '#C';
-
-        case NOTE_NAME_B:
-          return '#D';
-
-        default:
-          return '3';
-      }
+      break;
     }
 
     case NUMBER_FOUR: {
-      switch (shift) {
-        case NOTE_NAME_C:
-          return 'F';
+      sharpArray = [
+        ...sharpNumberArray.slice(5),
+        ...sharpNumberArray.slice(0, 5),
+      ];
+      flatArray = [
+        ...flatNumberArray.slice(5),
+        ...flatNumberArray.slice(0, 5),
+      ];
 
-        case NOTE_NAME_D:
-          return 'G';
-
-        case NOTE_NAME_E:
-          return 'A';
-
-        case NOTE_NAME_F:
-          return 'bB';
-
-        case NOTE_NAME_G:
-          return 'C';
-
-        case NOTE_NAME_A:
-          return 'D';
-
-        case NOTE_NAME_B:
-          return 'E';
-
-        default:
-          return '4';
-      }
+      break;
     }
 
-    case NUMBER_FOUR_SHARP:
-      return '#4';
+    case NUMBER_FOUR_SHARP: {
+      sharpArray = [
+        ...sharpNumberArray.slice(6),
+        ...sharpNumberArray.slice(0, 6),
+      ];
+      flatArray = [
+        ...flatNumberArray.slice(6),
+        ...flatNumberArray.slice(0, 6),
+      ];
+
+      break;
+    }
 
     case NUMBER_FIVE_FLAT: {
-      switch (shift) {
-        case NOTE_NAME_C:
-          return 'bG';
+      sharpArray = [
+        ...sharpNumberArray.slice(6),
+        ...sharpNumberArray.slice(0, 6),
+      ];
+      flatArray = [
+        ...flatNumberArray.slice(6),
+        ...flatNumberArray.slice(0, 6),
+      ];
 
-        case NOTE_NAME_D:
-          return 'bA';
-
-        case NOTE_NAME_E:
-          return 'bB';
-
-        case NOTE_NAME_F:
-          return 'B';
-
-        case NOTE_NAME_G:
-          return 'bD';
-
-        case NOTE_NAME_A:
-          return 'bE';
-
-        case NOTE_NAME_B:
-          return 'F';
-
-        default:
-          return 'b5';
-      }
+      break;
     }
 
     case NUMBER_FIVE: {
-      switch (shift) {
-        case NOTE_NAME_C:
-          return 'G';
+      sharpArray = [
+        ...sharpNumberArray.slice(7),
+        ...sharpNumberArray.slice(0, 7),
+      ];
+      flatArray = [
+        ...flatNumberArray.slice(7),
+        ...flatNumberArray.slice(0, 7),
+      ];
 
-        case NOTE_NAME_D:
-          return 'A';
-
-        case NOTE_NAME_E:
-          return 'B';
-
-        case NOTE_NAME_F:
-          return 'C';
-
-        case NOTE_NAME_G:
-          return 'D';
-
-        case NOTE_NAME_A:
-          return 'E';
-
-        case NOTE_NAME_B:
-          return '#F';
-
-        default:
-          return '5';
-      }
+      break;
     }
 
-    case NUMBER_FIVE_SHARP:
-      return '#5';
+    case NUMBER_FIVE_SHARP: {
+      sharpArray = [
+        ...sharpNumberArray.slice(8),
+        ...sharpNumberArray.slice(0, 8),
+      ];
+      flatArray = [
+        ...flatNumberArray.slice(8),
+        ...flatNumberArray.slice(0, 8),
+      ];
+
+      break;
+    }
 
     case NUMBER_SIX_FLAT: {
-      switch (shift) {
-        case NOTE_NAME_C:
-          return 'bA';
+      sharpArray = [
+        ...sharpNumberArray.slice(8),
+        ...sharpNumberArray.slice(0, 8),
+      ];
+      flatArray = [
+        ...flatNumberArray.slice(8),
+        ...flatNumberArray.slice(0, 8),
+      ];
 
-        case NOTE_NAME_D:
-          return 'bB';
-
-        case NOTE_NAME_E:
-          return 'C';
-
-        case NOTE_NAME_F:
-          return 'bD';
-
-        case NOTE_NAME_G:
-          return 'bE';
-
-        case NOTE_NAME_A:
-          return 'F';
-
-        case NOTE_NAME_B:
-          return 'G';
-
-        default:
-          return 'b6';
-      }
+      break;
     }
 
     case NUMBER_SIX: {
-      switch (shift) {
-        case NOTE_NAME_C:
-          return 'A';
+      sharpArray = [
+        ...sharpNumberArray.slice(9),
+        ...sharpNumberArray.slice(0, 9),
+      ];
+      flatArray = [
+        ...flatNumberArray.slice(9),
+        ...flatNumberArray.slice(0, 9),
+      ];
 
-        case NOTE_NAME_D:
-          return 'B';
-
-        case NOTE_NAME_E:
-          return '#C';
-
-        case NOTE_NAME_F:
-          return 'D';
-
-        case NOTE_NAME_G:
-          return 'E';
-
-        case NOTE_NAME_A:
-          return '#F';
-
-        case NOTE_NAME_B:
-          return '#G';
-
-        default:
-          return '6';
-      }
+      break;
     }
 
-    case NUMBER_SIX_SHARP:
-      return '#6';
+    case NUMBER_SIX_SHARP: {
+      sharpArray = [
+        ...sharpNumberArray.slice(10),
+        ...sharpNumberArray.slice(0, 10),
+      ];
+      flatArray = [
+        ...flatNumberArray.slice(10),
+        ...flatNumberArray.slice(0, 10),
+      ];
+
+      break;
+    }
 
     case NUMBER_SEVEN_FLAT: {
-      switch (shift) {
-        case NOTE_NAME_C:
-          return 'bB';
+      sharpArray = [
+        ...sharpNumberArray.slice(10),
+        ...sharpNumberArray.slice(0, 10),
+      ];
+      flatArray = [
+        ...flatNumberArray.slice(10),
+        ...flatNumberArray.slice(0, 10),
+      ];
 
-        case NOTE_NAME_D:
-          return 'C';
-
-        case NOTE_NAME_E:
-          return 'D';
-
-        case NOTE_NAME_F:
-          return 'bE';
-
-        case NOTE_NAME_G:
-          return 'F';
-
-        case NOTE_NAME_A:
-          return 'G';
-
-        case NOTE_NAME_B:
-          return 'A';
-
-        default:
-          return 'b7';
-      }
+      break;
     }
 
     case NUMBER_SEVEN: {
-      switch (shift) {
-        case NOTE_NAME_C:
-          return 'B';
+      sharpArray = [
+        ...sharpNumberArray.slice(11),
+        ...sharpNumberArray.slice(0, 11),
+      ];
+      flatArray = [
+        ...flatNumberArray.slice(11),
+        ...flatNumberArray.slice(0, 11),
+      ];
 
-        case NOTE_NAME_D:
-          return '#C';
-
-        case NOTE_NAME_E:
-          return '#D';
-
-        case NOTE_NAME_F:
-          return 'E';
-
-        case NOTE_NAME_G:
-          return '#F';
-
-        case NOTE_NAME_A:
-          return '#G';
-
-        case NOTE_NAME_B:
-          return '#A';
-
-        default:
-          return '7';
-      }
+      break;
     }
 
-    default:
-      return '';
+    default: {
+      sharpArray = sharpNumberArray;
+      flatArray = flatNumberArray;
+
+      break;
+    }
   }
 
   if (shift > 0) {
