@@ -1,8 +1,10 @@
 import React, { useContext } from 'react';
 import {
+  shiftNumberTransfer,
   numberTransfer,
   typeTransfer,
 } from '../../utils';
+import { isNumber } from 'lodash';
 import { TonalityContext } from '../../context';
 import './index.scss';
 
@@ -22,19 +24,18 @@ const Chord = ({
     on,
     type,
     capture,
-    currentTonality,
+    shift,
   } = chord;
 
-  const usedTonality = !!currentTonality ? numberTransfer({ number: currentTonality, tonality }) : tonality;
-
-  console.log('usedTonality', usedTonality)
+  const usedNumber = isNumber(shift) && shift !== 0 ? shiftNumberTransfer({ number, shift }) : number;
+  const usedOn = isNumber(shift) && shift !== 0 ? shiftNumberTransfer({ number: on, shift }) : on;
 
   const getChordName = () => {
     if (!!on) {
-      return `${numberTransfer({ number, tonality: usedTonality })}${typeTransfer(type)}/${numberTransfer({ number: on, tonality: usedTonality })}`;
+      return `${numberTransfer({ number: usedNumber, tonality })}${typeTransfer(type)}/${numberTransfer({ number: usedOn, tonality })}`;
     }
 
-    return `${numberTransfer({ number, tonality: usedTonality })}${typeTransfer(type)}`;
+    return `${numberTransfer({ number: usedNumber, tonality })}${typeTransfer(type)}`;
   }
 
   if (capture === 2) {

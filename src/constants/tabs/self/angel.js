@@ -25,7 +25,7 @@ const c = {
 const d = {
   number: NUMBER_ONE,
   type: TYPE_MAJOR,
-  currentTonality: NUMBER_TWO,
+  shift: 2,
 }
 
 const dm7 = {
