@@ -707,8 +707,33 @@ export function numberTransfer({
       }
     }
 
-    case NUMBER_TWO_SHARP:
-      return '#2';
+    case NUMBER_TWO_SHARP: {
+      switch (tonality) {
+        case NOTE_NAME_C:
+          return '#D';
+
+        case NOTE_NAME_D:
+          return 'F';
+
+        case NOTE_NAME_E:
+          return 'G';
+
+        case NOTE_NAME_F:
+          return '#G';
+
+        case NOTE_NAME_G:
+          return '#A';
+
+        case NOTE_NAME_A:
+          return 'C';
+
+        case NOTE_NAME_B:
+          return 'D';
+
+        default:
+          return '#2';
+      }
+    }
 
     case NUMBER_THREE_FLAT: {
       switch (tonality) {
