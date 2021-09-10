@@ -676,6 +676,36 @@ export function numberTransfer({
         case NOTE_NAME_B:
           return 'C';
 
+        case NOTE_NAME_C_SHARP:
+          return '';
+
+        case NOTE_NAME_D_FLAT:
+          return '';
+
+        case NOTE_NAME_D_SHARP:
+          return '';
+
+        case NOTE_NAME_E_FLAT:
+          return '';
+
+        case NOTE_NAME_F_SHARP:
+          return '';
+
+        case NOTE_NAME_G_FLAT:
+          return '';
+
+        case NOTE_NAME_G_SHARP:
+          return '';
+
+        case NOTE_NAME_A_FLAT:
+          return '';
+
+        case NOTE_NAME_A_SHARP:
+          return '';
+
+        case NOTE_NAME_B_FLAT:
+          return '';
+
         default:
           return '#1';
       }
@@ -703,6 +733,36 @@ export function numberTransfer({
 
         case NOTE_NAME_B:
           return 'C';
+
+        case NOTE_NAME_C_SHARP:
+          return '';
+
+        case NOTE_NAME_D_FLAT:
+          return '';
+
+        case NOTE_NAME_D_SHARP:
+          return '';
+
+        case NOTE_NAME_E_FLAT:
+          return '';
+
+        case NOTE_NAME_F_SHARP:
+          return '';
+
+        case NOTE_NAME_G_FLAT:
+          return '';
+
+        case NOTE_NAME_G_SHARP:
+          return '';
+
+        case NOTE_NAME_A_FLAT:
+          return '';
+
+        case NOTE_NAME_A_SHARP:
+          return '';
+
+        case NOTE_NAME_B_FLAT:
+          return '';
 
         default:
           return 'b2';
@@ -732,6 +792,36 @@ export function numberTransfer({
         case NOTE_NAME_B:
           return '#C';
 
+        case NOTE_NAME_C_SHARP:
+          return '';
+
+        case NOTE_NAME_D_FLAT:
+          return '';
+
+        case NOTE_NAME_D_SHARP:
+          return '';
+
+        case NOTE_NAME_E_FLAT:
+          return '';
+
+        case NOTE_NAME_F_SHARP:
+          return '';
+
+        case NOTE_NAME_G_FLAT:
+          return '';
+
+        case NOTE_NAME_G_SHARP:
+          return '';
+
+        case NOTE_NAME_A_FLAT:
+          return '';
+
+        case NOTE_NAME_A_SHARP:
+          return '';
+
+        case NOTE_NAME_B_FLAT:
+          return '';
+
         default:
           return '2';
       }
@@ -759,6 +849,36 @@ export function numberTransfer({
 
         case NOTE_NAME_B:
           return 'D';
+
+        case NOTE_NAME_C_SHARP:
+          return '';
+
+        case NOTE_NAME_D_FLAT:
+          return '';
+
+        case NOTE_NAME_D_SHARP:
+          return '';
+
+        case NOTE_NAME_E_FLAT:
+          return '';
+
+        case NOTE_NAME_F_SHARP:
+          return '';
+
+        case NOTE_NAME_G_FLAT:
+          return '';
+
+        case NOTE_NAME_G_SHARP:
+          return '';
+
+        case NOTE_NAME_A_FLAT:
+          return '';
+
+        case NOTE_NAME_A_SHARP:
+          return '';
+
+        case NOTE_NAME_B_FLAT:
+          return '';
 
         default:
           return '#2';
@@ -788,6 +908,36 @@ export function numberTransfer({
         case NOTE_NAME_B:
           return 'D';
 
+        case NOTE_NAME_C_SHARP:
+          return '';
+
+        case NOTE_NAME_D_FLAT:
+          return '';
+
+        case NOTE_NAME_D_SHARP:
+          return '';
+
+        case NOTE_NAME_E_FLAT:
+          return '';
+
+        case NOTE_NAME_F_SHARP:
+          return '';
+
+        case NOTE_NAME_G_FLAT:
+          return '';
+
+        case NOTE_NAME_G_SHARP:
+          return '';
+
+        case NOTE_NAME_A_FLAT:
+          return '';
+
+        case NOTE_NAME_A_SHARP:
+          return '';
+
+        case NOTE_NAME_B_FLAT:
+          return '';
+
         default:
           return 'b3';
       }
@@ -815,6 +965,36 @@ export function numberTransfer({
 
         case NOTE_NAME_B:
           return '#D';
+
+        case NOTE_NAME_C_SHARP:
+          return '';
+
+        case NOTE_NAME_D_FLAT:
+          return '';
+
+        case NOTE_NAME_D_SHARP:
+          return '';
+
+        case NOTE_NAME_E_FLAT:
+          return '';
+
+        case NOTE_NAME_F_SHARP:
+          return '';
+
+        case NOTE_NAME_G_FLAT:
+          return '';
+
+        case NOTE_NAME_G_SHARP:
+          return '';
+
+        case NOTE_NAME_A_FLAT:
+          return '';
+
+        case NOTE_NAME_A_SHARP:
+          return '';
+
+        case NOTE_NAME_B_FLAT:
+          return '';
 
         default:
           return '3';
@@ -844,6 +1024,36 @@ export function numberTransfer({
         case NOTE_NAME_B:
           return 'E';
 
+        case NOTE_NAME_C_SHARP:
+          return '';
+
+        case NOTE_NAME_D_FLAT:
+          return '';
+
+        case NOTE_NAME_D_SHARP:
+          return '';
+
+        case NOTE_NAME_E_FLAT:
+          return '';
+
+        case NOTE_NAME_F_SHARP:
+          return '';
+
+        case NOTE_NAME_G_FLAT:
+          return '';
+
+        case NOTE_NAME_G_SHARP:
+          return '';
+
+        case NOTE_NAME_A_FLAT:
+          return '';
+
+        case NOTE_NAME_A_SHARP:
+          return '';
+
+        case NOTE_NAME_B_FLAT:
+          return '';
+
         default:
           return '4';
       }
@@ -871,6 +1081,36 @@ export function numberTransfer({
 
         case NOTE_NAME_B:
           return 'F';
+
+        case NOTE_NAME_C_SHARP:
+          return '';
+
+        case NOTE_NAME_D_FLAT:
+          return '';
+
+        case NOTE_NAME_D_SHARP:
+          return '';
+
+        case NOTE_NAME_E_FLAT:
+          return '';
+
+        case NOTE_NAME_F_SHARP:
+          return '';
+
+        case NOTE_NAME_G_FLAT:
+          return '';
+
+        case NOTE_NAME_G_SHARP:
+          return '';
+
+        case NOTE_NAME_A_FLAT:
+          return '';
+
+        case NOTE_NAME_A_SHARP:
+          return '';
+
+        case NOTE_NAME_B_FLAT:
+          return '';
 
         default:
           return '#4';
@@ -900,6 +1140,36 @@ export function numberTransfer({
         case NOTE_NAME_B:
           return 'F';
 
+        case NOTE_NAME_C_SHARP:
+          return '';
+
+        case NOTE_NAME_D_FLAT:
+          return '';
+
+        case NOTE_NAME_D_SHARP:
+          return '';
+
+        case NOTE_NAME_E_FLAT:
+          return '';
+
+        case NOTE_NAME_F_SHARP:
+          return '';
+
+        case NOTE_NAME_G_FLAT:
+          return '';
+
+        case NOTE_NAME_G_SHARP:
+          return '';
+
+        case NOTE_NAME_A_FLAT:
+          return '';
+
+        case NOTE_NAME_A_SHARP:
+          return '';
+
+        case NOTE_NAME_B_FLAT:
+          return '';
+
         default:
           return 'b5';
       }
@@ -927,6 +1197,36 @@ export function numberTransfer({
 
         case NOTE_NAME_B:
           return '#F';
+
+        case NOTE_NAME_C_SHARP:
+          return '';
+
+        case NOTE_NAME_D_FLAT:
+          return '';
+
+        case NOTE_NAME_D_SHARP:
+          return '';
+
+        case NOTE_NAME_E_FLAT:
+          return '';
+
+        case NOTE_NAME_F_SHARP:
+          return '';
+
+        case NOTE_NAME_G_FLAT:
+          return '';
+
+        case NOTE_NAME_G_SHARP:
+          return '';
+
+        case NOTE_NAME_A_FLAT:
+          return '';
+
+        case NOTE_NAME_A_SHARP:
+          return '';
+
+        case NOTE_NAME_B_FLAT:
+          return '';
 
         default:
           return '5';
@@ -956,6 +1256,36 @@ export function numberTransfer({
         case NOTE_NAME_B:
           return 'G';
 
+        case NOTE_NAME_C_SHARP:
+          return '';
+
+        case NOTE_NAME_D_FLAT:
+          return '';
+
+        case NOTE_NAME_D_SHARP:
+          return '';
+
+        case NOTE_NAME_E_FLAT:
+          return '';
+
+        case NOTE_NAME_F_SHARP:
+          return '';
+
+        case NOTE_NAME_G_FLAT:
+          return '';
+
+        case NOTE_NAME_G_SHARP:
+          return '';
+
+        case NOTE_NAME_A_FLAT:
+          return '';
+
+        case NOTE_NAME_A_SHARP:
+          return '';
+
+        case NOTE_NAME_B_FLAT:
+          return '';
+
         default:
           return 'b6';
       }
@@ -983,6 +1313,36 @@ export function numberTransfer({
 
         case NOTE_NAME_B:
           return 'G';
+
+        case NOTE_NAME_C_SHARP:
+          return '';
+
+        case NOTE_NAME_D_FLAT:
+          return '';
+
+        case NOTE_NAME_D_SHARP:
+          return '';
+
+        case NOTE_NAME_E_FLAT:
+          return '';
+
+        case NOTE_NAME_F_SHARP:
+          return '';
+
+        case NOTE_NAME_G_FLAT:
+          return '';
+
+        case NOTE_NAME_G_SHARP:
+          return '';
+
+        case NOTE_NAME_A_FLAT:
+          return '';
+
+        case NOTE_NAME_A_SHARP:
+          return '';
+
+        case NOTE_NAME_B_FLAT:
+          return '';
 
         default:
           return 'b6';
@@ -1012,6 +1372,36 @@ export function numberTransfer({
         case NOTE_NAME_B:
           return '#G';
 
+        case NOTE_NAME_C_SHARP:
+          return '';
+
+        case NOTE_NAME_D_FLAT:
+          return '';
+
+        case NOTE_NAME_D_SHARP:
+          return '';
+
+        case NOTE_NAME_E_FLAT:
+          return '';
+
+        case NOTE_NAME_F_SHARP:
+          return '';
+
+        case NOTE_NAME_G_FLAT:
+          return '';
+
+        case NOTE_NAME_G_SHARP:
+          return '';
+
+        case NOTE_NAME_A_FLAT:
+          return '';
+
+        case NOTE_NAME_A_SHARP:
+          return '';
+
+        case NOTE_NAME_B_FLAT:
+          return '';
+
         default:
           return '6';
       }
@@ -1039,6 +1429,36 @@ export function numberTransfer({
 
         case NOTE_NAME_B:
           return 'A';
+
+        case NOTE_NAME_C_SHARP:
+          return '';
+
+        case NOTE_NAME_D_FLAT:
+          return '';
+
+        case NOTE_NAME_D_SHARP:
+          return '';
+
+        case NOTE_NAME_E_FLAT:
+          return '';
+
+        case NOTE_NAME_F_SHARP:
+          return '';
+
+        case NOTE_NAME_G_FLAT:
+          return '';
+
+        case NOTE_NAME_G_SHARP:
+          return '';
+
+        case NOTE_NAME_A_FLAT:
+          return '';
+
+        case NOTE_NAME_A_SHARP:
+          return '';
+
+        case NOTE_NAME_B_FLAT:
+          return '';
 
         default:
           return '#6';
@@ -1068,6 +1488,36 @@ export function numberTransfer({
         case NOTE_NAME_B:
           return 'A';
 
+        case NOTE_NAME_C_SHARP:
+          return '';
+
+        case NOTE_NAME_D_FLAT:
+          return '';
+
+        case NOTE_NAME_D_SHARP:
+          return '';
+
+        case NOTE_NAME_E_FLAT:
+          return '';
+
+        case NOTE_NAME_F_SHARP:
+          return '';
+
+        case NOTE_NAME_G_FLAT:
+          return '';
+
+        case NOTE_NAME_G_SHARP:
+          return '';
+
+        case NOTE_NAME_A_FLAT:
+          return '';
+
+        case NOTE_NAME_A_SHARP:
+          return '';
+
+        case NOTE_NAME_B_FLAT:
+          return '';
+
         default:
           return 'b7';
       }
@@ -1095,6 +1545,36 @@ export function numberTransfer({
 
         case NOTE_NAME_B:
           return '#A';
+
+        case NOTE_NAME_C_SHARP:
+          return '';
+
+        case NOTE_NAME_D_FLAT:
+          return '';
+
+        case NOTE_NAME_D_SHARP:
+          return '';
+
+        case NOTE_NAME_E_FLAT:
+          return '';
+
+        case NOTE_NAME_F_SHARP:
+          return '';
+
+        case NOTE_NAME_G_FLAT:
+          return '';
+
+        case NOTE_NAME_G_SHARP:
+          return '';
+
+        case NOTE_NAME_A_FLAT:
+          return '';
+
+        case NOTE_NAME_A_SHARP:
+          return '';
+
+        case NOTE_NAME_B_FLAT:
+          return '';
 
         default:
           return '7';
