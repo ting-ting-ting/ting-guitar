@@ -819,8 +819,33 @@ export function numberTransfer({
       }
     }
 
-    case NUMBER_FOUR_SHARP:
-      return '#4';
+    case NUMBER_FOUR_SHARP: {
+      switch (tonality) {
+        case NOTE_NAME_C:
+          return '#F';
+
+        case NOTE_NAME_D:
+          return '#G';
+
+        case NOTE_NAME_E:
+          return '#A';
+
+        case NOTE_NAME_F:
+          return 'B';
+
+        case NOTE_NAME_G:
+          return '#C';
+
+        case NOTE_NAME_A:
+          return '#D';
+
+        case NOTE_NAME_B:
+          return 'F';
+
+        default:
+          return '#4';
+      }
+    }
 
     case NUMBER_FIVE_FLAT: {
       switch (tonality) {
