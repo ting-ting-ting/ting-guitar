@@ -987,8 +987,33 @@ export function numberTransfer({
       }
     }
 
-    case NUMBER_SIX_SHARP:
-      return '#6';
+    case NUMBER_SIX_SHARP: {
+      switch (tonality) {
+        case NOTE_NAME_C:
+          return '#A';
+
+        case NOTE_NAME_D:
+          return 'C';
+
+        case NOTE_NAME_E:
+          return 'D';
+
+        case NOTE_NAME_F:
+          return '#D';
+
+        case NOTE_NAME_G:
+          return 'F';
+
+        case NOTE_NAME_A:
+          return 'G';
+
+        case NOTE_NAME_B:
+          return 'A';
+
+        default:
+          return '#6';
+      }
+    }
 
     case NUMBER_SEVEN_FLAT: {
       switch (tonality) {
