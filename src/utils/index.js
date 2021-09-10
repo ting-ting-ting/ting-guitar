@@ -116,69 +116,250 @@ export function shiftNoteName({
   note,
   shift,
 }) {
+  let sharpArray;
+  let flatArray;
+
   switch (note) {
-    case NOTE_NAME_C:
-      return 'C';
+    case NOTE_NAME_C: {
+      sharpArray = sharpNoteNameArray;
+      flatArray = flatNoteNameArray;
 
-    case NOTE_NAME_C_SHARP:
-      return '#C';
+      break;
+    }
 
-    case NOTE_NAME_D_FLAT:
-      return 'bD';
+    case NOTE_NAME_C_SHARP: {
+      sharpArray = [
+        ...sharpNoteNameArray.slice(1),
+        ...sharpNoteNameArray.slice(0, 1),
+      ];
+      flatArray = [
+        ...flatNoteNameArray.slice(1),
+        ...flatNoteNameArray.slice(0, 1),
+      ];
 
-    case NOTE_NAME_D:
-      return 'D';
+      break;
+    }
 
-    case NOTE_NAME_D_SHARP:
-      return '#D';
+    case NOTE_NAME_D_FLAT: {
+      sharpArray = [
+        ...sharpNoteNameArray.slice(1),
+        ...sharpNoteNameArray.slice(0, 1),
+      ];
+      flatArray = [
+        ...flatNoteNameArray.slice(1),
+        ...flatNoteNameArray.slice(0, 1),
+      ];
 
-    case NOTE_NAME_E_FLAT:
-      return 'bE';
+      break;
+    }
 
-    case NOTE_NAME_E:
-      return 'E';
+    case NOTE_NAME_D: {
+      sharpArray = [
+        ...sharpNoteNameArray.slice(2),
+        ...sharpNoteNameArray.slice(0, 2),
+      ];
+      flatArray = [
+        ...flatNoteNameArray.slice(2),
+        ...flatNoteNameArray.slice(0, 2),
+      ];
 
-    case NOTE_NAME_F:
-      return 'F';
+      break;
+    }
 
-    case NOTE_NAME_F_SHARP:
-      return '#F';
+    case NOTE_NAME_D_SHARP: {
+      sharpArray = [
+        ...sharpNoteNameArray.slice(3),
+        ...sharpNoteNameArray.slice(0, 3),
+      ];
+      flatArray = [
+        ...flatNoteNameArray.slice(3),
+        ...flatNoteNameArray.slice(0, 3),
+      ];
 
-    case NOTE_NAME_G_FLAT:
-      return 'bG';
+      break;
+    }
 
-    case NOTE_NAME_G:
-      return 'G';
+    case NOTE_NAME_E_FLAT: {
+      sharpArray = [
+        ...sharpNoteNameArray.slice(3),
+        ...sharpNoteNameArray.slice(0, 3),
+      ];
+      flatArray = [
+        ...flatNoteNameArray.slice(3),
+        ...flatNoteNameArray.slice(0, 3),
+      ];
 
-    case NOTE_NAME_G_SHARP:
-      return '#G';
+      break;
+    }
 
-    case NOTE_NAME_A_FLAT:
-      return 'bA';
+    case NOTE_NAME_E: {
+      sharpArray = [
+        ...sharpNoteNameArray.slice(4),
+        ...sharpNoteNameArray.slice(0, 4),
+      ];
+      flatArray = [
+        ...flatNoteNameArray.slice(4),
+        ...flatNoteNameArray.slice(0, 4),
+      ];
 
-    case NOTE_NAME_A:
-      return 'A';
+      break;
+    }
 
-    case NOTE_NAME_A_SHARP:
-      return '#A';
+    case NOTE_NAME_F: {
+      sharpArray = [
+        ...sharpNoteNameArray.slice(5),
+        ...sharpNoteNameArray.slice(0, 5),
+      ];
+      flatArray = [
+        ...flatNoteNameArray.slice(5),
+        ...flatNoteNameArray.slice(0, 5),
+      ];
 
-    case NOTE_NAME_B_FLAT:
-      return 'bB';
+      break;
+    }
 
-    case NOTE_NAME_B:
-      return 'B';
+    case NOTE_NAME_F_SHARP: {
+      sharpArray = [
+        ...sharpNoteNameArray.slice(6),
+        ...sharpNoteNameArray.slice(0, 6),
+      ];
+      flatArray = [
+        ...flatNoteNameArray.slice(6),
+        ...flatNoteNameArray.slice(0, 6),
+      ];
 
-    default:
-      return '';
+      break;
+    }
+
+    case NOTE_NAME_G_FLAT: {
+      sharpArray = [
+        ...sharpNoteNameArray.slice(6),
+        ...sharpNoteNameArray.slice(0, 6),
+      ];
+      flatArray = [
+        ...flatNoteNameArray.slice(6),
+        ...flatNoteNameArray.slice(0, 6),
+      ];
+
+      break;
+    }
+
+    case NOTE_NAME_G: {
+      sharpArray = [
+        ...sharpNoteNameArray.slice(7),
+        ...sharpNoteNameArray.slice(0, 7),
+      ];
+      flatArray = [
+        ...flatNoteNameArray.slice(7),
+        ...flatNoteNameArray.slice(0, 7),
+      ];
+
+      break;
+    }
+
+    case NOTE_NAME_G_SHARP: {
+      sharpArray = [
+        ...sharpNoteNameArray.slice(8),
+        ...sharpNoteNameArray.slice(0, 8),
+      ];
+      flatArray = [
+        ...flatNoteNameArray.slice(8),
+        ...flatNoteNameArray.slice(0, 8),
+      ];
+
+      break;
+    }
+
+    case NOTE_NAME_A_FLAT: {
+      sharpArray = [
+        ...sharpNoteNameArray.slice(8),
+        ...sharpNoteNameArray.slice(0, 8),
+      ];
+      flatArray = [
+        ...flatNoteNameArray.slice(8),
+        ...flatNoteNameArray.slice(0, 8),
+      ];
+
+      break;
+    }
+
+    case NOTE_NAME_A: {
+      sharpArray = [
+        ...sharpNoteNameArray.slice(9),
+        ...sharpNoteNameArray.slice(0, 9),
+      ];
+      flatArray = [
+        ...flatNoteNameArray.slice(9),
+        ...flatNoteNameArray.slice(0, 9),
+      ];
+
+      break;
+    }
+
+    case NOTE_NAME_A_SHARP: {
+      sharpArray = [
+        ...sharpNoteNameArray.slice(10),
+        ...sharpNoteNameArray.slice(0, 10),
+      ];
+      flatArray = [
+        ...flatNoteNameArray.slice(10),
+        ...flatNoteNameArray.slice(0, 10),
+      ];
+
+      break;
+    }
+
+    case NOTE_NAME_B_FLAT: {
+      sharpArray = [
+        ...sharpNoteNameArray.slice(10),
+        ...sharpNoteNameArray.slice(0, 10),
+      ];
+      flatArray = [
+        ...flatNoteNameArray.slice(10),
+        ...flatNoteNameArray.slice(0, 10),
+      ];
+
+      break;
+    }
+
+    case NOTE_NAME_B: {
+      sharpArray = [
+        ...sharpNoteNameArray.slice(11),
+        ...sharpNoteNameArray.slice(0, 11),
+      ];
+      flatArray = [
+        ...flatNoteNameArray.slice(11),
+        ...flatNoteNameArray.slice(0, 11),
+      ];
+
+      break;
+    }
+
+    default: {
+      sharpArray = sharpNoteNameArray;
+      flatArray = flatNoteNameArray;
+
+      break;
+    }
   }
+
+  if (shift > 0) {
+    return nth(sharpArray, shift);
+  }
+
+  if (shift < 0) {
+    return nth(flatArray, shift);
+  }
+
+  return note;
 }
 
 export function shiftNumber({
   number,
   shift,
 }) {
-  let sharpArray
-  let flatArray
+  let sharpArray;
+  let flatArray;
 
   switch (number) {
     case NUMBER_ONE: {

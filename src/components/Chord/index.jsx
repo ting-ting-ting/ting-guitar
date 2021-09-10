@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import {
-  shiftNumber,
+  shiftNoteName,
   numberTransfer,
   typeTransfer,
 } from '../../utils';
@@ -27,15 +27,12 @@ const Chord = ({
     shift,
   } = chord;
 
-  const usedNumber = isNumber(shift) && shift !== 0 ? shiftNumber({ number, shift }) : number;
-  const usedOn = isNumber(shift) && shift !== 0 ? shiftNumber({ number: on, shift }) : on;
-
   const getChordName = () => {
     if (!!on) {
-      return `${numberTransfer({ number: usedNumber, tonality })}${typeTransfer(type)}/${numberTransfer({ number: usedOn, tonality })}`;
+      return `${numberTransfer({ number, tonality })}${typeTransfer(type)}/${numberTransfer({ number: on, tonality })}`;
     }
 
-    return `${numberTransfer({ number: usedNumber, tonality })}${typeTransfer(type)}`;
+    return `${numberTransfer({ number, tonality })}${typeTransfer(type)}`;
   }
 
   if (capture === 2) {
