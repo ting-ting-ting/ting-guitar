@@ -52,54 +52,63 @@ import {
   TYPE_SUS4,
 } from '../constants/type';
 
+const sharpNumberArray = [
+  NUMBER_ONE,
+  NUMBER_ONE_SHARP,
+  NUMBER_TWO,
+  NUMBER_TWO_SHARP,
+  NUMBER_THREE,
+  NUMBER_FOUR,
+  NUMBER_FOUR_SHARP,
+  NUMBER_FIVE,
+  NUMBER_FIVE_SHARP,
+  NUMBER_SIX,
+  NUMBER_SIX_SHARP,
+  NUMBER_SEVEN,
+];
+
+const flatNumberArray = [
+  NUMBER_ONE,
+  NUMBER_TWO_FLAT,
+  NUMBER_TWO,
+  NUMBER_THREE_FLAT,
+  NUMBER_THREE,
+  NUMBER_FOUR,
+  NUMBER_FIVE_FLAT,
+  NUMBER_FIVE,
+  NUMBER_SIX_FLAT,
+  NUMBER_SIX,
+  NUMBER_SEVEN_FLAT,
+  NUMBER_SEVEN,
+];
+
 export function shiftNumberTransfer({
   number,
   shift,
 }) {
+  let sharpArray
+  let flatArray
+
   switch (number) {
     case NUMBER_ONE: {
-      const sharpArray = [
-        NUMBER_ONE,
-        NUMBER_ONE_SHARP,
-        NUMBER_TWO,
-        NUMBER_TWO_SHARP,
-        NUMBER_THREE,
-        NUMBER_FOUR,
-        NUMBER_FOUR_SHARP,
-        NUMBER_FIVE,
-        NUMBER_FIVE_SHARP,
-        NUMBER_SIX,
-        NUMBER_SIX_SHARP,
-        NUMBER_SEVEN,
-      ];
-      const flatArray = [
-        NUMBER_ONE,
-        NUMBER_TWO_FLAT,
-        NUMBER_TWO,
-        NUMBER_THREE_FLAT,
-        NUMBER_THREE,
-        NUMBER_FOUR,
-        NUMBER_FIVE_FLAT,
-        NUMBER_FIVE,
-        NUMBER_SIX_FLAT,
-        NUMBER_SIX,
-        NUMBER_SEVEN_FLAT,
-        NUMBER_SEVEN,
-      ];
+      sharpArray = sharpNumberArray;
+      flatArray = flatNumberArray;
 
-      if (shift > 0) {
-        return nth(sharpArray, shift);
-      }
-
-      if (shift < 0) {
-        return nth(flatArray, shift);
-      }
-
-      return number;
+      break;
     }
 
-    case NUMBER_ONE_SHARP:
-      return '#1';
+    case NUMBER_ONE_SHARP: {
+      sharpArray = [
+        ...sharpNumberArray.slice(1),
+        ...sharpNumberArray.slice(0, 1),
+      ];
+      flatArray = [
+        ...flatNumberArray.slice(1),
+        ...flatNumberArray.slice(0, 1),
+      ];
+
+      break;
+    }
 
     case NUMBER_TWO_FLAT: {
       switch (shift) {
@@ -424,6 +433,16 @@ export function shiftNumberTransfer({
     default:
       return '';
   }
+
+  if (shift > 0) {
+    return nth(sharpArray, shift);
+  }
+
+  if (shift < 0) {
+    return nth(flatArray, shift);
+  }
+
+  return number;
 }
 
 export function numberTransfer({
