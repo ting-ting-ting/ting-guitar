@@ -1,3 +1,4 @@
+import { nth } from 'lodash';
 import {
   NUMBER_ONE,
   NUMBER_ONE_SHARP,
@@ -57,31 +58,44 @@ export function shiftNumberTransfer({
 }) {
   switch (number) {
     case NUMBER_ONE: {
-      switch (shift) {
-        case NOTE_NAME_C:
-          return 'C';
+      const sharpArray = [
+        NUMBER_ONE,
+        NUMBER_ONE_SHARP,
+        NUMBER_TWO,
+        NUMBER_TWO_SHARP,
+        NUMBER_THREE,
+        NUMBER_FOUR,
+        NUMBER_FOUR_SHARP,
+        NUMBER_FIVE,
+        NUMBER_FIVE_SHARP,
+        NUMBER_SIX,
+        NUMBER_SIX_SHARP,
+        NUMBER_SEVEN,
+      ];
+      const flatArray = [
+        NUMBER_ONE,
+        NUMBER_TWO_FLAT,
+        NUMBER_TWO,
+        NUMBER_THREE_FLAT,
+        NUMBER_THREE,
+        NUMBER_FOUR,
+        NUMBER_FIVE_FLAT,
+        NUMBER_FIVE,
+        NUMBER_SIX_FLAT,
+        NUMBER_SIX,
+        NUMBER_SEVEN_FLAT,
+        NUMBER_SEVEN,
+      ];
 
-        case NOTE_NAME_D:
-          return 'D';
-
-        case NOTE_NAME_E:
-          return 'E';
-
-        case NOTE_NAME_F:
-          return 'F';
-
-        case NOTE_NAME_G:
-          return 'G';
-
-        case NOTE_NAME_A:
-          return 'A';
-
-        case NOTE_NAME_B:
-          return 'B';
-
-        default:
-          return '1';
+      if (shift > 0) {
+        return nth(sharpArray, shift);
       }
+
+      if (shift < 0) {
+        return nth(flatArray, shift);
+      }
+
+      return number;
     }
 
     case NUMBER_ONE_SHARP:
